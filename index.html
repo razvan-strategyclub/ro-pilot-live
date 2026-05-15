@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="ro" data-lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Livespace România · Revenue Improvement System pentru Manageri de vânzări</title>
+<meta name="description" content="Revenue Improvement System (RIS) · sistem operațional pentru Manageri de vânzări și Chief Revenue Officer în B2B €5M–€100M. Tool + framework SPIDER + advisor săptămânal. Primele rezultate în 60 zile." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://livespace.io/ro" />
+<link rel="alternate" hreflang="ro" href="https://livespace.io/ro" />
+<link rel="alternate" hreflang="en" href="https://livespace.io/en" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Livespace România · Revenue Improvement System" />
+<meta property="og:description" content="Transformă marketingul, vânzările și post-sales într-un motor integrat de venit. Primele rezultate în 60 zile." />
+<meta property="og:locale" content="ro_RO" />
+<meta property="og:locale:alternate" content="en_US" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+<style>
+:root{
+  /* Surfaces */
+  --color-bg:#FFFFFF;
+  --color-surface:#F7F8FC;
+  --color-surface-2:#F0F2FA;
+  --color-border:#E2E4EF;
+  --color-divider:#DDE0EE;
+  /* Text */
+  --color-text:#0D0D1A;
+  --color-text-muted:#3D3D5C;
+  --color-text-faint:#6B7290;
+  /* Accent */
+  --color-primary:#2963FF;
+  --color-primary-hover:#1A3DD4;
+  --color-primary-active:#1230B3;
+  --color-primary-light:#EEF2FF;
+  --color-secondary:#7B5EA7;
+  --color-secondary-light:#F3F0F9;
+  /* Stări */
+  --color-success:#1DB77F;
+  --color-warning:#F5A623;
+  --color-error:#E53935;
+  --color-text-inverse:#FFFFFF;
+  /* Type scale */
+  --text-xs:clamp(0.75rem,0.7rem + 0.25vw,0.875rem);
+  --text-sm:clamp(0.875rem,0.8rem + 0.35vw,1rem);
+  --text-base:clamp(1rem,0.95rem + 0.25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + 0.75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --text-3xl:clamp(2.5rem,1rem + 4vw,4.5rem);
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  /* Spacing */
+  --space-1:0.25rem; --space-2:0.5rem; --space-3:0.75rem; --space-4:1rem;
+  --space-5:1.25rem; --space-6:1.5rem; --space-8:2rem; --space-10:2.5rem;
+  --space-12:3rem; --space-16:4rem; --space-20:5rem; --space-24:6rem; --space-32:8rem;
+  /* Radius */
+  --radius-sm:4px; --radius-md:8px; --radius-lg:12px; --radius-xl:16px;
+  --radius-2xl:24px; --radius-full:9999px;
+  /* Shadows */
+  --shadow-sm:0 1px 3px rgba(13,13,26,.06);
+  --shadow-md:0 4px 16px rgba(13,13,26,.08);
+  --shadow-lg:0 12px 40px rgba(13,13,26,.12);
+  --shadow-blue-sm:0 2px 8px rgba(41,99,255,.06);
+  --shadow-blue-md:0 4px 20px rgba(41,99,255,.12);
+  --shadow-blue-lg:0 16px 48px rgba(41,99,255,.16);
+  /* Transitions */
+  --transition-fast:120ms cubic-bezier(.16,1,.3,1);
+  --transition-interactive:180ms cubic-bezier(.16,1,.3,1);
+  --transition-smooth:300ms cubic-bezier(.16,1,.3,1);
+  /* Content widths */
+  --content-narrow:640px; --content-default:960px; --content-wide:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;color:var(--color-text);background:var(--color-bg);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-primary);text-decoration:none;transition:color var(--transition-interactive)}
+a:hover{color:var(--color-primary-hover);text-decoration:underline}
+h1,h2,h3,h4{font-weight:700;line-height:1.15;letter-spacing:-.02em;color:var(--color-text);margin:0 0 var(--space-4)}
+h1{font-size:var(--text-3xl);letter-spacing:-.03em}
+h2{font-size:var(--text-2xl)}
+h3{font-size:var(--text-xl)}
+h4{font-size:var(--text-lg);font-weight:600}
+p{margin:0 0 var(--space-4);max-width:65ch}
+ul,ol{margin:0 0 var(--space-4);padding-left:1.25rem}
+li{margin-bottom:var(--space-2)}
+.container{max-width:var(--content-wide);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12))}
+.narrow{max-width:var(--content-default);margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);font-family:inherit;font-size:var(--text-sm);font-weight:600;padding:12px 24px;border-radius:var(--radius-md);border:none;cursor:pointer;white-space:nowrap;transition:background var(--transition-interactive),box-shadow var(--transition-interactive),transform var(--transition-fast);text-decoration:none;min-height:44px}
+.btn-primary{background:var(--color-primary);color:var(--color-text-inverse)}
+.btn-primary:hover{background:var(--color-primary-hover);color:#fff;text-decoration:none}
+.btn-secondary{background:transparent;color:var(--color-primary);border:1.5px solid var(--color-primary);padding:11px 23px}
+.btn-secondary:hover{background:var(--color-primary-light);text-decoration:none}
+.btn-ghost{background:transparent;color:var(--color-primary);padding:8px 16px;font-weight:500;min-height:auto}
+.btn-ghost:hover{text-decoration:underline}
+.btn-lg{padding:16px 32px;font-size:var(--text-base);min-height:52px}
+.btn-on-dark{background:#fff;color:var(--color-primary)}
+.btn-on-dark:hover{background:var(--color-primary-light)}
+
+/* Badge */
+.badge{display:inline-flex;align-items:center;background:var(--color-primary-light);color:var(--color-primary);border-radius:var(--radius-full);padding:4px 12px;font-size:var(--text-xs);font-weight:600;letter-spacing:.02em}
+.badge-secondary{background:var(--color-secondary-light);color:var(--color-secondary)}
+.section-eyebrow{display:inline-block;font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-primary);background:var(--color-primary-light);border-radius:var(--radius-full);padding:6px 14px;margin-bottom:var(--space-4)}
+
+/* Sections */
+section{padding-block:clamp(var(--space-16),8vw,var(--space-24))}
+.section-highlight{background:var(--color-surface)}
+.section-tight{padding-block:clamp(var(--space-12),6vw,var(--space-16))}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--color-border);height:72px;display:flex;align-items:center;transition:box-shadow var(--transition-smooth)}
+.navbar.scrolled{box-shadow:var(--shadow-sm)}
+.navbar-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);width:100%;max-width:var(--content-wide);margin-inline:auto;padding-inline:var(--space-6)}
+.logo{display:flex;align-items:center;gap:var(--space-2);font-weight:800;font-size:var(--text-lg);color:var(--color-text);text-decoration:none;letter-spacing:-.02em}
+.logo:hover{text-decoration:none;color:var(--color-text)}
+.logo-mark{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-secondary) 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+.logo-tag{font-size:var(--text-xs);font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:2px 8px;border-radius:var(--radius-full);letter-spacing:.05em}
+.nav-links{display:flex;align-items:center;gap:var(--space-6);list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--color-text-muted);font-weight:500;font-size:var(--text-sm)}
+.nav-links a:hover{color:var(--color-primary)}
+.nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+.lang-switch{display:inline-flex;background:var(--color-surface);border-radius:var(--radius-full);padding:2px;font-size:var(--text-xs);font-weight:600}
+.lang-switch button{background:none;border:none;padding:4px 10px;border-radius:var(--radius-full);cursor:pointer;color:var(--color-text-muted);font-family:inherit;font-weight:600;font-size:var(--text-xs)}
+.lang-switch button.active{background:#fff;color:var(--color-primary);box-shadow:var(--shadow-sm)}
+.mobile-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--color-text);padding:8px}
+
+/* Hero */
+.hero{padding-block:clamp(var(--space-16),10vw,var(--space-32));text-align:center;background:linear-gradient(180deg,#fff 0%,var(--color-surface) 100%);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(41,99,255,.05),transparent 40%),radial-gradient(circle at 80% 70%,rgba(123,94,167,.05),transparent 40%);pointer-events:none}
+.hero-content{max-width:820px;margin-inline:auto;position:relative}
+.hero h1{font-size:var(--text-3xl);font-weight:800;line-height:1.05;letter-spacing:-.035em;margin-bottom:var(--space-6)}
+.hero h1 .accent{background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:var(--text-lg);color:var(--color-text-muted);line-height:1.6;margin:0 auto var(--space-8);max-width:680px}
+.hero-actions{display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;margin-bottom:var(--space-8)}
+.hero-video{max-width:780px;margin:var(--space-10) auto 0;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-blue-lg);aspect-ratio:16/9;background:#1A1A2E;display:flex;align-items:center;justify-content:center;position:relative;color:#fff}
+.hero-video .play-btn{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform var(--transition-smooth)}
+.hero-video .play-btn:hover{transform:scale(1.08)}
+.hero-video .play-btn::after{content:"";border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent var(--color-primary);margin-left:6px}
+.hero-video-label{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:#fff;font-size:var(--text-sm);font-weight:500;opacity:.85}
+.trust-strip{margin-top:var(--space-10);color:var(--color-text-faint);font-size:var(--text-sm)}
+.trust-logos{display:flex;justify-content:center;align-items:center;gap:var(--space-8);margin-top:var(--space-4);flex-wrap:wrap;opacity:.55}
+.trust-logo{height:28px;padding:4px 16px;background:var(--color-surface-2);border-radius:var(--radius-md);font-weight:700;color:var(--color-text-faint);font-size:var(--text-sm);letter-spacing:.05em}
+
+/* Section headings */
+.section-header{text-align:center;max-width:760px;margin:0 auto var(--space-12)}
+.section-header h2{margin-bottom:var(--space-4)}
+.section-header p{color:var(--color-text-muted);margin-inline:auto}
+
+/* 3-col grid */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6)}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-6)}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6)}
+@media (max-width:1024px){.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid-3,.grid-2,.grid-4{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--color-bg);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);box-shadow:var(--shadow-blue-sm);transition:all var(--transition-smooth);height:100%;display:flex;flex-direction:column}
+.card:hover{box-shadow:var(--shadow-blue-md);border-color:rgba(41,99,255,.2);transform:translateY(-2px)}
+.card .icon-wrap{width:48px;height:48px;border-radius:var(--radius-md);background:var(--color-primary-light);color:var(--color-primary);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-4)}
+.card h3,.card h4{margin-bottom:var(--space-3)}
+.card p{color:var(--color-text-muted);margin-bottom:var(--space-4)}
+.card-cta{margin-top:auto;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.card-featured{border-color:var(--color-primary);background:linear-gradient(180deg,var(--color-primary-light) 0%,#fff 30%);position:relative}
+.card-featured::before{content:"⭐ Recomandat pentru tine";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--color-primary);color:#fff;padding:4px 14px;border-radius:var(--radius-full);font-size:var(--text-xs);font-weight:700;letter-spacing:.04em;white-space:nowrap}
+
+/* Definition callout */
+.callout{background:var(--color-primary-light);border-left:4px solid var(--color-primary);border-radius:var(--radius-md);padding:var(--space-6) var(--space-8);margin-block:var(--space-6)}
+.callout-secondary{background:var(--color-secondary-light);border-left-color:var(--color-secondary)}
+.callout strong{color:var(--color-primary)}
+
+/* Stats grid */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-6);text-align:center}
+@media (max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.stat-card{padding:var(--space-6);background:#fff;border-radius:var(--radius-lg);border:1px solid var(--color-border)}
+.stat-number{font-size:clamp(2rem,1rem + 4vw,3.5rem);font-weight:800;color:var(--color-primary);line-height:1;letter-spacing:-.03em;margin-bottom:var(--space-2);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-label{font-weight:600;color:var(--color-text);margin-bottom:var(--space-2)}
+.stat-source{font-size:var(--text-xs);color:var(--color-text-faint);line-height:1.4}
+
+/* Tables */
+.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-sm)}
+table.data{width:100%;border-collapse:collapse;font-size:var(--text-sm)}
+table.data th,table.data td{padding:var(--space-4) var(--space-5);text-align:left;border-bottom:1px solid var(--color-border);vertical-align:top}
+table.data th{background:var(--color-surface);font-weight:700;color:var(--color-text);letter-spacing:.01em;font-size:var(--text-xs);text-transform:uppercase}
+table.data tr:last-child td{border-bottom:none}
+table.data tbody tr:hover{background:var(--color-primary-light)}
+table.data td strong{color:var(--color-text)}
+.tick{color:var(--color-success);font-weight:700}
+.cross{color:var(--color-error);font-weight:700}
+.warn{color:var(--color-warning);font-weight:700}
+
+/* SPIDER dimensions */
+.spider-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-4)}
+@media (max-width:768px){.spider-grid{grid-template-columns:1fr}}
+.spider-item{display:flex;gap:var(--space-4);padding:var(--space-5);background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);transition:all var(--transition-interactive)}
+.spider-item:hover{border-color:var(--color-primary);box-shadow:var(--shadow-blue-sm)}
+.spider-letter{flex-shrink:0;width:44px;height:44px;border-radius:var(--radius-md);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:var(--text-lg)}
+.spider-item h4{margin-bottom:var(--space-1);font-size:var(--text-base)}
+.spider-item p{font-size:var(--text-sm);color:var(--color-text-muted);margin:0}
+
+/* Recognition checklist */
+.checklist{list-style:none;padding:0;max-width:720px;margin:0 auto}
+.checklist li{padding:var(--space-4);background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);margin-bottom:var(--space-3);display:flex;gap:var(--space-3);align-items:flex-start;font-size:var(--text-base)}
+.checklist li::before{content:"✓";flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--color-primary-light);color:var(--color-primary);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+
+/* Pain points (numbered) */
+.pain-list{counter-reset:pain;list-style:none;padding:0;max-width:820px;margin:0 auto}
+.pain-list li{counter-increment:pain;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5) var(--space-5) var(--space-5) var(--space-16);position:relative;margin-bottom:var(--space-3);font-size:var(--text-base)}
+.pain-list li::before{content:counter(pain);position:absolute;left:var(--space-4);top:var(--space-5);width:36px;height:36px;border-radius:50%;background:var(--color-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:var(--text-sm)}
+.pain-list li q{display:block;font-weight:600;color:var(--color-text);margin-bottom:var(--space-2);font-style:italic}
+.pain-list li q::before{content:"„"}
+.pain-list li q::after{content:"”"}
+.pain-list li small{display:block;color:var(--color-text-muted);font-size:var(--text-sm);font-style:normal}
+
+/* Timeline */
+.timeline{position:relative;max-width:920px;margin:0 auto}
+.timeline::before{content:"";position:absolute;left:20px;top:0;bottom:0;width:2px;background:var(--color-border)}
+.timeline-item{position:relative;padding-left:var(--space-12);margin-bottom:var(--space-8)}
+.timeline-dot{position:absolute;left:0;top:6px;width:40px;height:40px;border-radius:50%;background:var(--color-primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;box-shadow:0 0 0 6px #fff}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);margin-bottom:var(--space-3);transition:box-shadow var(--transition-interactive)}
+.faq details[open]{box-shadow:var(--shadow-blue-sm);border-color:var(--color-primary)}
+.faq summary{padding:var(--space-5) var(--space-6);font-weight:600;font-size:var(--text-base);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--space-4)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;font-weight:400;color:var(--color-primary);transition:transform var(--transition-smooth);flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq-content{padding:0 var(--space-6) var(--space-5);color:var(--color-text-muted);line-height:1.7}
+.faq-content p:last-child{margin-bottom:0}
+
+/* Final CTA */
+.cta-final{background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-secondary) 100%);color:#fff;text-align:center;border-radius:var(--radius-2xl);padding:clamp(var(--space-12),8vw,var(--space-20))}
+.cta-final h2{color:#fff;margin-bottom:var(--space-3)}
+.cta-final p{color:rgba(255,255,255,.9);margin:0 auto var(--space-6);max-width:600px}
+.cta-final .hero-actions{margin-bottom:var(--space-4)}
+.cta-final-trust{font-size:var(--text-sm);color:rgba(255,255,255,.8)}
+
+/* Author block */
+.author{display:flex;gap:var(--space-5);background:var(--color-surface);border-radius:var(--radius-lg);padding:var(--space-6);align-items:center;max-width:760px;margin:0 auto}
+.author-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:var(--text-lg);flex-shrink:0}
+.author p{margin-bottom:var(--space-2)}
+.author-meta{font-size:var(--text-xs);color:var(--color-text-faint)}
+
+/* Newsletter */
+.newsletter-form{display:flex;gap:var(--space-3);max-width:520px;margin:var(--space-6) auto 0;flex-wrap:wrap}
+.newsletter-form input,.newsletter-form select{flex:1 1 200px;padding:12px 16px;border:1px solid var(--color-border);border-radius:var(--radius-md);font-family:inherit;font-size:var(--text-base);background:#fff;min-height:44px}
+.newsletter-form input:focus,.newsletter-form select:focus{outline:2px solid var(--color-primary);outline-offset:1px;border-color:var(--color-primary)}
+
+/* Footer */
+.footer{background:#0D0D1A;color:rgba(255,255,255,.7);padding-block:var(--space-20) var(--space-8)}
+.footer-grid{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:var(--space-8);margin-bottom:var(--space-12)}
+@media (max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.footer-grid{grid-template-columns:1fr}}
+.footer h5{color:#fff;font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--space-4);font-weight:700}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer li{margin-bottom:var(--space-2)}
+.footer a{color:rgba(255,255,255,.7);font-size:var(--text-sm)}
+.footer a:hover{color:#fff;text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:var(--space-6);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4);font-size:var(--text-xs)}
+.footer-social{display:flex;gap:var(--space-3)}
+.footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff}
+.footer-social a:hover{background:var(--color-primary)}
+
+/* Sticky elements */
+.sticky-bar{position:fixed;top:72px;left:0;right:0;background:var(--color-primary);color:#fff;padding:var(--space-3) var(--space-4);text-align:center;font-size:var(--text-sm);z-index:90;transform:translateY(-100%);transition:transform var(--transition-smooth)}
+.sticky-bar.visible{transform:translateY(0)}
+.sticky-bar a{color:#fff;font-weight:700;text-decoration:underline;margin-left:var(--space-2)}
+.whatsapp-fab{position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:80;transition:transform var(--transition-smooth)}
+.whatsapp-fab:hover{transform:scale(1.08);text-decoration:none;color:#fff}
+
+/* Reveal animation */
+.animate-on-scroll{opacity:0;transform:translateY(24px);transition:opacity 500ms ease,transform 500ms ease}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+
+/* EN content hidden by default */
+[data-i18n-en]{display:none}
+html[data-lang="en"] [data-i18n-ro]{display:none}
+html[data-lang="en"] [data-i18n-en]{display:initial}
+html[data-lang="en"] [data-i18n-en].block{display:block}
+
+@media (max-width:768px){
+  .nav-links{display:none}
+  .mobile-toggle{display:flex}
+  .hero-actions .btn{flex:1 1 100%}
+  table.data{font-size:var(--text-xs)}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+
+<!-- Sticky promo bar -->
+<div class="sticky-bar" id="stickyBar">
+  📅 Webinar gratuit · Vineri 11:00 · „Cum livrezi target lunar predictibil cu echipa ta"
+  <a href="#webinarii">Înscrie-te →</a>
+</div>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">L</span>
+      <span>Livespace</span>
+      <span class="logo-tag">RO</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#programe">Pentru cine</a></li>
+        <li><a href="#ce-este-ris">Revenue System</a></li>
+        <li><a href="#preturi">Prețuri</a></li>
+        <li><a href="#resurse">Resurse</a></li>
+        <li><a href="#parteneri">Parteneri</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button onclick="setLang('ro')" id="langRo" class="active">RO</button>
+        <button onclick="setLang('en')" id="langEn">EN</button>
+      </div>
+      <a href="#login" class="btn-ghost" style="font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted)">Login</a>
+      <a href="#trial" class="btn btn-primary">Începe trial 14 zile</a>
+      <button class="mobile-toggle" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <span class="section-eyebrow" data-i18n-ro>Pentru Manageri de vânzări și Chief Revenue Officer</span>
+      <span class="section-eyebrow" data-i18n-en>For Sales Managers and Chief Revenue Officers</span>
+      <h1 data-i18n-ro>Transformă marketingul, vânzările și post-sales într-un <span class="accent">motor integrat de venit.</span></h1>
+      <h1 data-i18n-en>Turn marketing, sales and post-sales into <span class="accent">one integrated revenue engine.</span></h1>
+      <p class="lead" data-i18n-ro>Revenue Improvement System (RIS) este sistemul operațional pentru managerii care <strong>livrează</strong> numărul — nu cei care îl explică. Tool + framework SPIDER + advisor săptămânal. Implementat în 4–8 săptămâni, vizibil din săptămâna 2.</p>
+      <p class="lead" data-i18n-en>Revenue Improvement System (RIS) is the operating system for managers who <strong>deliver</strong> the number — not the ones who explain it. Tool + SPIDER framework + weekly advisor. Implemented in 4–8 weeks, visible from week 2.</p>
+      <div class="hero-actions">
+        <a href="#self-assessment" class="btn btn-primary btn-lg">Spider Self-Assessment · 5 min</a>
+        <a href="#demo" class="btn btn-secondary btn-lg">30 min cu un Revenue Advisor</a>
+      </div>
+      <div class="hero-video" role="button" aria-label="Play intro video">
+        <div class="play-btn" aria-hidden="true"></div>
+        <div class="hero-video-label">Răzvan Nicoară · ce este RIS în 60 sec</div>
+      </div>
+      <div class="trust-strip">
+        <p style="margin:0">Folosit de Manageri de vânzări din <strong>12 piețe europene</strong> · companii €5M–€100M</p>
+        <div class="trust-logos">
+          <div class="trust-logo">CLIENT 1</div>
+          <div class="trust-logo">CLIENT 2</div>
+          <div class="trust-logo">CLIENT 3</div>
+          <div class="trust-logo">CLIENT 4</div>
+          <div class="trust-logo">CLIENT 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2 · Promisiune & componente -->
+<section class="section-highlight" id="promisiune">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Promisiunea</span>
+      <h2>Un singur program. Trei componente integrate. Un sistem care îți crește venitul săptămână de săptămână.</h2>
+      <p>Construim împreună un <strong>sistem practic de îmbunătățire permanentă a veniturilor</strong> — NU o intervenție punctuală, NU un audit, NU un curs. O infrastructură operațională care continuă să producă rezultat după 90 zile, 1 an, 3 ani.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card animate-on-scroll">
+        <div class="icon-wrap"><i data-lucide="user-check"></i></div>
+        <h3>1:1 săptămânal cu Revenue Advisor</h3>
+        <p>Sesiune săptămânală cu consultantul tău dedicat. Consultanță + coaching live · revizuire forecast · ajustare ritual · escalări tactice între sesiuni pe Slack/email.</p>
+      </div>
+      <div class="card animate-on-scroll">
+        <div class="icon-wrap"><i data-lucide="graduation-cap"></i></div>
+        <h3>Training SPIDER (Levels 1–7)</h3>
+        <p>Training complet pentru tine și echipă · <strong>inclus, nu add-on</strong>. Materiale + workshop-uri live + simulări · diferențiat per Manager vs. per agent de vânzări.</p>
+      </div>
+      <div class="card animate-on-scroll">
+        <div class="icon-wrap"><i data-lucide="monitor"></i></div>
+        <h3>Implementare CRM Livespace</h3>
+        <p>Tool inclus + setup complet + configurare pipeline ponderat + dashboard board-ready + ritual săptămânal instalat. <strong>Nu „cumpărăm CRM separat".</strong></p>
+      </div>
+    </div>
+
+    <div class="narrow" style="margin-top:var(--space-12)">
+      <h3 style="text-align:center">Pentru cine este programul</h3>
+      <ul class="checklist">
+        <li><strong>Manageri de vânzări</strong> cu echipă de 5+ agenți de vânzări care trebuie să livreze target lunar predictibil</li>
+        <li><strong>Antreprenori</strong> care încă închid singuri 60–80% din deal-uri și vor să iasă din execuție</li>
+        <li><strong>Chief Revenue Officers</strong> care vor să integreze marketing + sales + post-sales sub o singură conducere</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 · SPIDER Framework -->
+<section id="spider">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Framework</span>
+      <h2>SPIDER · framework-ul operațional pe 7 dimensiuni măsurabile</h2>
+      <p>Evaluează maturitatea operațională a echipei pe <strong>7 dimensiuni</strong> și o transformă într-un proces repetabil de creștere a venitului — măsurabil trimestrial, comparabil cu piața, ajustabil pe baza datelor reale.</p>
+    </div>
+
+    <div class="spider-grid">
+      <div class="spider-item"><div class="spider-letter">S</div><div><h4>Strategy</h4><p>Claritate ICP · poziționare · diferențiator vs. competitori · segment focus</p></div></div>
+      <div class="spider-item"><div class="spider-letter">P</div><div><h4>Process</h4><p>Pipeline ponderat · etape definite · Definition of Done per etapă · activity standards</p></div></div>
+      <div class="spider-item"><div class="spider-letter">I</div><div><h4>Information</h4><p>Date colectate · forecast accuracy · raportare cross-funcțională · single source of truth</p></div></div>
+      <div class="spider-item"><div class="spider-letter">D</div><div><h4>Discipline</h4><p>Ritual săptămânal instalat · activity KPI · adoption tool · revizuire forecast</p></div></div>
+      <div class="spider-item"><div class="spider-letter">E</div><div><h4>Execution</h4><p>Playbook-uri scrise · onboarding agent de vânzări nou · consistență per segment</p></div></div>
+      <div class="spider-item"><div class="spider-letter">R</div><div><h4>Relationships</h4><p>Handoff marketing → sales → post-sales · NRR · expansion revenue · churn signals</p></div></div>
+    </div>
+
+    <div class="callout" style="max-width:var(--content-default);margin:var(--space-12) auto 0">
+      <strong>Cum se măsoară:</strong> fiecare dimensiune evaluată trimestrial cu Revenue Advisor · scor 1–5 per dimensiune · agregat în <strong>Scor Spider 1–100</strong> per agent de vânzări + per echipă · benchmark RO + comparație cu industrie + traiectorie temporală pe 12 luni.
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 · Cele 3 programe -->
+<section class="section-highlight" id="programe">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">3 programe SPIDER</span>
+      <h2>Alege traseul tău</h2>
+      <p>3 profiluri de client, 3 promisiuni de timp diferite, 3 bundle-uri specifice. Începe cu Self-Assessment, vezi unde stai și mergi pe traseul potrivit.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge">🕸️ Foundation</span>
+        <h3>SPIDER Foundation</h3>
+        <p><strong>Pentru cine:</strong> Antreprenor €500K–€2M, echipă 0–3 agenți de vânzări, tu închizi 60–80% din deal-uri.</p>
+        <p><strong>Ce vrei să faci:</strong> Să ieși din vânzare. Să construiești un sistem care merge fără tine.</p>
+        <p><strong>Promisiune · 30 zile</strong> · Bundle Foundation · onboarding rapid · cash-back garantat</p>
+        <a href="spider-foundation.html" class="card-cta">Vezi programul complet →</a>
+      </div>
+      <div class="card card-featured">
+        <span class="badge">🕸️ Acceleration</span>
+        <h3>SPIDER Acceleration</h3>
+        <p><strong>Pentru cine:</strong> Manager de vânzări €5M–€20M, echipă 5+ agenți, ai fost promovat pentru că vinzi cel mai bine.</p>
+        <p><strong>Ce vrei să faci:</strong> Să livrezi target lunar prin echipă, nu în locul ei.</p>
+        <p><strong>Promisiune · 60–90 zile</strong> · Bundle Pro · ~€700/lună all-in · cash-back garantat</p>
+        <a href="spider-acceleration.html" class="card-cta">Vezi programul complet →</a>
+      </div>
+      <div class="card">
+        <span class="badge badge-secondary">🕸️ Forecast</span>
+        <h3>SPIDER Forecast</h3>
+        <p><strong>Pentru cine:</strong> Director executiv €10M+, marketing + sales + post-sales = 3 silos.</p>
+        <p><strong>Ce vrei să faci:</strong> Să integrezi cele 3 funcții sub o singură conducere. Să devii Chief Revenue Officer.</p>
+        <p><strong>Promisiune · 90 zile</strong> · Enterprise tier · paid pilot 30–60 zile · Security & Compliance Pack</p>
+        <a href="spider-forecast.html" class="card-cta">Vezi programul complet →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 · Definiție RIS -->
+<section id="ce-este-ris">
+  <div class="container narrow">
+    <div class="section-header">
+      <span class="section-eyebrow">Definiție · 2026</span>
+      <h2>Ce este Revenue Improvement System (RIS)?</h2>
+    </div>
+
+    <div class="callout">
+      <p><strong>Revenue Improvement System (RIS)</strong> este un <strong>sistem operațional integrat</strong> care unifică echipele de <strong>marketing, vânzări și post-sales</strong> într-un singur <strong>motor de generare și multiplicare a revenue-ului</strong>. Format din 3 componente inseparabile: (1) tool de execuție — <strong>Livespace CRM</strong>, (2) framework de management — <strong>SPIDER</strong>, (3) <strong>Revenue Advisor săptămânal</strong>.</p>
+      <p style="margin-bottom:0">Diferența față de un CRM clasic: RIS nu îți dă un instrument — îți dă un sistem care funcționează cu sau fără tine în cameră.</p>
+    </div>
+
+    <h3 style="margin-top:var(--space-10)">Cui i se adresează</h3>
+    <p>Manageri de vânzări, VP Sales, Chief Revenue Officer și directori comerciali din companii €5M–€100M revenue, cu echipe de 5+ vânzători + manager dedicat, care trebuie să livreze target lunar predictibil.</p>
+
+    <h3 style="margin-top:var(--space-8)">Ce NU este RIS</h3>
+    <ul>
+      <li>❌ Nu e un CRM mai bun (deși include unul)</li>
+      <li>❌ Nu e un curs de sales (deși include training)</li>
+      <li>❌ Nu e o consultanță de strategie (deși include diagnostic)</li>
+      <li>❌ Nu e o automatizare de marketing (deși conectează MQL → SQL → CS)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 6 · 3 piloni cu KPI -->
+<section class="section-highlight">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cum funcționează</span>
+      <h2>3 piloni livrabili cu KPI măsurabil</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead><tr><th>Pilon</th><th>Ce livrează Managerului de vânzări</th><th>KPI măsurabil</th></tr></thead>
+        <tbody>
+          <tr><td><strong>💻 Livespace Automation</strong></td><td>Pipeline ponderat vizibil · forecast 30/60/90 zile · atribuire marketing → sales → CS · rapoarte board-ready dintr-un buton</td><td>Forecast accuracy &gt;85% · Timp revizuire manager −60%</td></tr>
+          <tr><td><strong>🕸️ SPIDER Framework</strong></td><td>Scor Spider per agent de vânzări (7 dimensiuni) · KPI activity checklist · proces de vânzare repetabil · onboarding standardizat</td><td>Scor Spider uplift +20% în 90 zile · Onboarding rep nou −45 zile</td></tr>
+          <tr><td><strong>🧑‍🏫 Revenue Advisor săptămânal</strong></td><td>1:1 cu Manager săpt · coaching agenți pe rotație · diagnostic lunar · escalări tactice · revizuire ritual săpt</td><td>Manager time în deals operațional &lt;30% · Rată câștig +15%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 · Recognition -->
+<section id="pentru-cine">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Ești în locul potrivit dacă...</span>
+      <h2>Bifează mental:</h2>
+    </div>
+    <ul class="checklist">
+      <li>Conduci o echipă de <strong>5+ oameni de vânzări</strong> (sau o vei avea în 12 luni)</li>
+      <li>Ești <strong>Manager de vânzări · VP Sales · Chief Revenue Officer</strong> sau director comercial — nu antreprenor</li>
+      <li>Trebuie să dai <strong>forecast lunar</strong> cuiva care nu acceptă „cred că da"</li>
+      <li>Compania ta face <strong>€5M–€100M revenue/an</strong> (sau o duci acolo în 24 luni)</li>
+      <li>Ai <strong>marketing + sales + post-sales</strong>, dar funcționează ca 3 firme diferite</li>
+    </ul>
+    <p class="narrow" style="text-align:center;margin-top:var(--space-6);font-weight:600;color:var(--color-primary)">→ Dacă ai bifat 3 din 5, restul paginii este pentru tine.</p>
+  </div>
+</section>
+
+<!-- SECTION 8 · Pain points -->
+<section class="section-highlight">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">7 simptome</span>
+      <h2>7 lucruri pe care le-am auzit de la fiecare Manager de vânzări</h2>
+    </div>
+    <ol class="pain-list">
+      <li><q>CEO-ul îmi cere raportul vânzărilor pe luna viitoare — eu îi dau doar o intuiție.</q><small>Lună de lună, aceeași discuție.</small></li>
+      <li><q>Petrec 50% din timp în deal-urile agenților mei de vânzări.</q><small>Nu mai conduc — execut alături de ei.</small></li>
+      <li><q>Marketing aduce lead-uri — eu nu știu care sunt buni.</q><small>Atribuirea e o legendă urbană.</small></li>
+      <li><q>Agenții mei de vânzări vând fiecare cum vrea.</q><small>Nu pot scala un proces pe care nu-l deține nimeni.</small></li>
+      <li><q>Vineri seara construiesc rapoarte în Excel.</q><small>Justific o realitate pe care nu o controlez.</small></li>
+      <li><q>Un agent de vânzări nou produce abia după 4–6 luni.</q><small>Onboarding-ul e oral și nereproductibil.</small></li>
+      <li><q>Post-sales află de churn cu 30 de zile prea târziu.</q><small>Iar eu aflu prin telefon de la client.</small></li>
+    </ol>
+    <div class="narrow" style="text-align:center;margin-top:var(--space-8)">
+      <p style="font-weight:600;font-size:var(--text-lg);margin-bottom:var(--space-6)">Dacă ai bifat minim 4 → nu ai o problemă de oameni. Ai o problemă de <span class="accent" style="color:var(--color-primary)">sistem</span>.</p>
+      <a href="#self-assessment" class="btn btn-primary btn-lg">Vezi exact unde stă sistemul tău · 5 min</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9 · Stats -->
+<section id="cifre">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cifre · cu sursă</span>
+      <h2>Ce livrăm măsurabil</h2>
+      <p>Cifre cu metodologie publică. Fără „până la X%". Mediana clienților Livespace, sample size declarat.</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">+15%</div>
+        <div class="stat-label">rată câștig vânzări</div>
+        <div class="stat-source">Mediana Livespace clients · 12 luni post-implementare · n=180</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">−30 zile</div>
+        <div class="stat-label">ciclu vânzare</div>
+        <div class="stat-source">Mediana B2B mid-market · 90 zile post-implementare</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">+3h/săpt</div>
+        <div class="stat-label">timp economisit per manager</div>
+        <div class="stat-source">Pe ședințe + raportare manuală</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">−45 zile</div>
+        <div class="stat-label">onboarding rep nou</div>
+        <div class="stat-source">De la 120 zile la 75 zile time-to-first-deal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 10 · MKT + Sales + CS -->
+<section class="section-highlight">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Pentru Chief Revenue Officer</span>
+      <h2>Player-Coach de azi devine Head of Revenue mâine.</h2>
+      <p>Pentru că revenue-ul nu mai trăiește doar în Sales. Cu RIS, un singur dashboard arată cum un lead intră în marketing, devine SQL, închide cu sales și se extinde în CS.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon-wrap"><i data-lucide="megaphone"></i></div>
+        <h3>📣 Marketing</h3>
+        <p>MQL → SQL handoff · atribuire revenue · CAC pe canal · feedback de la sales pe lead quality · cost per opportunity per sursă</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><i data-lucide="trending-up"></i></div>
+        <h3>💼 Sales</h3>
+        <p>Pipeline ponderat · Scor Spider per agent · rată câștig per segment · forecast 30/60/90 · activity KPI live</p>
+      </div>
+      <div class="card">
+        <div class="icon-wrap"><i data-lucide="handshake"></i></div>
+        <h3>🤝 Post-Sales</h3>
+        <p>Retention · Net Revenue Retention (NRR) · churn signals early · upsell pipeline · expansion revenue</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 11 · Self-Assessment -->
+<section id="self-assessment">
+  <div class="container narrow" style="text-align:center">
+    <span class="section-eyebrow">Lead magnet · 5 minute</span>
+    <h2>Spider Self-Assessment</h2>
+    <p style="font-size:var(--text-lg);color:var(--color-text-muted);margin-inline:auto">În 5 minute știi exact unde stă echipa ta față de media RO. Diagnostic onest pe 7 dimensiuni Spider. Nu e o broșură. Nu e un quiz de marketing. Este instrumentul folosit cu 200+ Manageri de vânzări în CEE.</p>
+    <ul style="list-style:none;padding:0;display:grid;gap:var(--space-3);max-width:520px;margin:var(--space-8) auto;text-align:left">
+      <li>✅ 12 întrebări scalare (1–5) · <strong>primele 3 fără email</strong></li>
+      <li>✅ Rezultat: scor grafic Spider + 3 blocaje top + benchmark RO per industrie</li>
+      <li>✅ Email gating doar pentru raportul detaliat PDF (10 pagini · cu plan de acțiune pe 30 zile)</li>
+    </ul>
+    <a href="index.html#self-assessment" class="btn btn-primary btn-lg">Începe acum · 5 min · fără cont</a>
+  </div>
+</section>
+
+<!-- SECTION 12 · Timeline 90 days -->
+<section class="section-highlight" id="timeline">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cum arată echipa ta</span>
+      <h2>Primele rezultate la 60 zile · transformare deplină la 90 zile</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">1</div>
+        <h3>Diagnostic · Săpt 1–2</h3>
+        <p style="max-width:none">Scor Spider per agent de vânzări · audit pipeline ponderat · raport scris Manager + CEO · 3 quick-wins identificate. <em>Impact: Manager + CEO.</em></p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">2</div>
+        <h3>Setup · Săpt 3–8</h3>
+        <p style="max-width:none">KPI definite · pipeline ponderat live · dashboard coaching · ritual săpt instalat · primele rapoarte board-ready. <em>Impact: Manager + echipa.</em></p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">3</div>
+        <h3>Optimizare · Săpt 9–13</h3>
+        <p style="max-width:none">Coaching agenți pe rotație · ajustare proces pe date reale · forecast 30/60/90 stabilizat · marketing↔sales↔CS handoff funcțional. <em>Impact: Manager + CEO + agenți + CS.</em></p>
+      </div>
+    </div>
+
+    <div class="callout callout-secondary" style="max-width:760px;margin:var(--space-12) auto 0">
+      <h3 style="margin-bottom:var(--space-3)">Promisiunea (contractual asumat)</h3>
+      <ul style="margin-bottom:0">
+        <li>Forecast cu margin de eroare <strong>&lt;20% la 60 zile</strong> · <strong>&lt;15% la 90 zile</strong></li>
+        <li>Scor Spider uplift <strong>+10% la 60 zile</strong> · <strong>+20% la 90 zile</strong></li>
+        <li>Manager de vânzări în <strong>&lt;40% din deal-uri la 60 zile</strong> · <strong>&lt;30% la 90 zile</strong></li>
+        <li>CEO primește <strong>raport board-ready dintr-un buton</strong>, nu duminică seara</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 13 · Comparison -->
+<section id="comparatie">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">RIS vs alternative</span>
+      <h2>Ce alegere ai concret</h2>
+      <p>Comparație onestă, nu pitch.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="data">
+        <thead>
+          <tr>
+            <th></th>
+            <th><strong>RIS</strong><br><small>Livespace + SPIDER + Advisor</small></th>
+            <th>CRM standalone<br><small>HubSpot / Pipedrive / Salesforce</small></th>
+            <th>Consultanță sales</th>
+            <th>Training agenți<br><small>Sandler / Challenger / MEDDIC</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Tool de execuție</strong></td><td><span class="tick">✅ Inclus</span></td><td><span class="tick">✅ Da</span></td><td><span class="cross">❌ Nu</span></td><td><span class="cross">❌ Nu</span></td></tr>
+          <tr><td><strong>Proces configurat pe echipa ta</strong></td><td><span class="tick">✅ SPIDER 1–7</span></td><td><span class="warn">⚠️ Tu îl configurezi</span></td><td><span class="tick">✅ Strategic</span></td><td><span class="warn">⚠️ Doar tactic</span></td></tr>
+          <tr><td><strong>Coaching agenți săptămânal</strong></td><td><span class="tick">✅ Inclus</span></td><td><span class="cross">❌ Nu</span></td><td><span class="warn">⚠️ Ad-hoc</span></td><td><span class="warn">⚠️ Doar la training</span></td></tr>
+          <tr><td><strong>Adoption garantat</strong></td><td><span class="tick">✅ Ritual + DoD</span></td><td><span class="cross">❌ Tu te lupți</span></td><td><span class="cross">❌ Pleacă consultant, pleacă proces</span></td><td><span class="cross">❌ Skill rămâne, sistem nu</span></td></tr>
+          <tr><td><strong>MKT + Sales + CS conectate</strong></td><td><span class="tick">✅ Native</span></td><td><span class="warn">⚠️ Integrări complexe</span></td><td><span class="cross">❌ Nu</span></td><td><span class="cross">❌ Nu</span></td></tr>
+          <tr><td><strong>Cost lunar all-in</strong></td><td><strong>~€700/lună</strong></td><td>~€200–€500/lună</td><td>~€3K–€10K/lună</td><td>~€500–€2K one-shot/agent</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 14 · Case Studies -->
+<section class="section-highlight" id="cazuri">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Studii de caz</span>
+      <h2>Manageri de vânzări care au făcut tranziția</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="trust-logo" style="margin-bottom:var(--space-4)">SAAS · €12M ARR</div>
+        <p style="font-style:italic;color:var(--color-text)">„În 90 zile am redus timpul petrecut în deal-urile echipei de la 50% la 25%. Pot să conduc, nu doar să execut."</p>
+        <p style="font-weight:600;margin-top:auto">— Head of Sales · SaaS B2B</p>
+        <div style="display:flex;gap:var(--space-3);margin-block:var(--space-3);font-size:var(--text-xs);color:var(--color-text-muted);font-weight:600">
+          <span>+23% rată câștig</span><span>·</span><span>−38 zile cycle</span>
+        </div>
+        <a href="#" class="card-cta">Citește studiul · 4 min →</a>
+      </div>
+      <div class="card">
+        <div class="trust-logo" style="margin-bottom:var(--space-4)">SERVICES · €20M</div>
+        <p style="font-style:italic;color:var(--color-text)">„CEO-ul a încetat să-mi mai ceară explicații lunare. Forecast-ul nostru e credibil pentru prima dată în 4 ani."</p>
+        <p style="font-weight:600;margin-top:auto">— VP Sales · B2B Services</p>
+        <div style="display:flex;gap:var(--space-3);margin-block:var(--space-3);font-size:var(--text-xs);color:var(--color-text-muted);font-weight:600">
+          <span>Forecast acc. 89%</span><span>·</span><span>100% adoption 60z</span>
+        </div>
+        <a href="#" class="card-cta">Citește studiul · 4 min →</a>
+      </div>
+      <div class="card">
+        <div class="trust-logo" style="margin-bottom:var(--space-4)">DISTRIB · €45M</div>
+        <p style="font-style:italic;color:var(--color-text)">„Marketing și sales nu mai vorbesc două limbi. Avem un singur dashboard, un singur ritual săptămânal."</p>
+        <p style="font-weight:600;margin-top:auto">— Chief Revenue Officer · Distribution</p>
+        <div style="display:flex;gap:var(--space-3);margin-block:var(--space-3);font-size:var(--text-xs);color:var(--color-text-muted);font-weight:600">
+          <span>NRR 118%</span><span>·</span><span>−45z onboarding</span>
+        </div>
+        <a href="#" class="card-cta">Citește studiul · 4 min →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 15 · For your CEO -->
+<section>
+  <div class="container narrow">
+    <div class="callout callout-secondary">
+      <h3 style="margin-bottom:var(--space-4)">📄 „Trimite-i pagina asta CEO-ului tău. Aici e ce o să întrebe:"</h3>
+      <ul style="margin-bottom:var(--space-4)">
+        <li><strong>ROI</strong> · payback în 4–6 luni la o echipă de 5–10 agenți de vânzări</li>
+        <li><strong>Risk</strong> · pilot 30 zile cu cash-back garantat</li>
+        <li><strong>KPIs board-ready</strong> · forecast 30/60/90 + Scor Spider + rată câștig + NRR în același dashboard</li>
+        <li><strong>Implementare</strong> · 4–8 săptămâni, fără disruption pe pipeline-ul curent</li>
+        <li><strong>Total cost</strong> · ~€700/lună all-in, fără cost ascuns</li>
+      </ul>
+      <a href="#" class="btn btn-primary">Descarcă pachetul CEO · 1-pager PDF + ROI calculator</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 16 · FAQ -->
+<section class="section-highlight" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ</span>
+      <h2>Răspunsurile pe care le caută un Manager de vânzări</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Ce este Revenue Improvement System și prin ce diferă față de un CRM normal?</summary>
+        <div class="faq-content"><p>RIS unifică tool (CRM) + framework (SPIDER) + advisor săptămânal într-un singur sistem operațional. Un CRM normal îți dă un instrument; RIS îți dă sistemul care îl face folosit zilnic de echipă. Diferența cheie: adoption-ul nu mai e responsabilitatea ta unilateral, ci a sistemului.</p></div>
+      </details>
+      <details>
+        <summary>De ce am nevoie de un advisor — am deja experiență în sales management?</summary>
+        <div class="faq-content"><p>Advisor-ul nu te învață să faci sales. Te ține accountable pe ritual săpt, e a doua pereche de ochi pe forecast înainte să-l prezinți CEO-ului, și acoperă coaching-ul agenților pe rotație astfel încât tu să ieși din execuție.</p></div>
+      </details>
+      <details>
+        <summary>Cât durează până vede CEO-ul rezultate?</summary>
+        <div class="faq-content"><p>14 zile pentru primul raport board-ready. 90 zile pentru forecast cu margin &lt;15%. 6 luni pentru payback complet pe o echipă de 5–10 agenți de vânzări.</p></div>
+      </details>
+      <details>
+        <summary>Pot integra Livespace cu HubSpot / Salesforce existing?</summary>
+        <div class="faq-content"><p>Da. Două căi: migrăm complet, sau rulăm complementar (Livespace pentru sales + advisor, HubSpot pentru marketing automation). Diagnosticul în săpt 1 stabilește calea optimă pentru contextul tău.</p></div>
+      </details>
+      <details>
+        <summary>Cum convingi echipa să folosească CRM-ul?</summary>
+        <div class="faq-content"><p>Nu prin training. Prin Definition of Done legat de KPI personal + ritual săpt cu advisor + dashboard transparent la nivel de echipă. Adoption măsurat → 85%+ în 60 zile la clienții noștri.</p></div>
+      </details>
+      <details>
+        <summary>Ce se întâmplă dacă renunț după 3 luni?</summary>
+        <div class="faq-content"><p>Anulezi cu 30 zile notice. Datele rămân ale tale, exportabile complet. Dacă renunți pentru că Definition of Done nu a fost livrat, primești cash-back pe ultimele 2 luni.</p></div>
+      </details>
+      <details>
+        <summary>Cum măsurați Scor Spider concret?</summary>
+        <div class="faq-content"><p>7 dimensiuni evaluate trimestrial per agent de vânzări: Strategy · Process · Information · Discipline · Execution · Relationships · (a 7-a publicată în diagnostic). Scor 1–5 per dimensiune, agregat 1–100. Benchmark RO + comparație cu industrie + traiectorie temporală.</p></div>
+      </details>
+      <details>
+        <summary>Ce face un Revenue Advisor concret într-o săptămână?</summary>
+        <div class="faq-content"><p>1× 1:1 cu Manager (60 min) · 1× ritual de echipă observat (45 min) · 1× coaching rotativ pe agent (30 min/agent, cycle 6 săpt) · revizuire pipeline scris (offline) · Slack/email disponibil pentru escalări tactice.</p></div>
+      </details>
+      <details>
+        <summary>Funcționează și pe B2B SaaS / B2B servicii / B2B distribuție?</summary>
+        <div class="faq-content"><p>Da, pe toate trei. Framework-ul SPIDER e independent de model. Diferă playbook-ul de vânzare per industrie, pe care îl ajustăm în diagnosticul de săpt 1–2.</p></div>
+      </details>
+      <details>
+        <summary>Ce e diferit la RIS față de Sales Methodology generic (Sandler / Challenger / MEDDIC)?</summary>
+        <div class="faq-content"><p>Sandler, Challenger și MEDDIC sunt metodologii de vânzare la nivel de reprezentant individual. RIS este un sistem operațional la nivel de echipă, care poate include oricare din aceste metodologii ca strat tactic, dar nu se reduce la ele. RIS răspunde la „cum conduc o echipă de revenue", nu doar la „cum vinde un rep".</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 17 · Consultant banner -->
+<section id="parteneri">
+  <div class="container narrow" style="text-align:center">
+    <span class="section-eyebrow badge-secondary" style="background:var(--color-secondary-light);color:var(--color-secondary)">Pentru consultanți</span>
+    <h3>Ai trecut tu însuți printr-o transformare ca Manager de vânzări sau Chief Revenue Officer?</h3>
+    <p style="font-size:var(--text-lg);color:var(--color-text-muted)">Devino <strong>Revenue Advisor certificat</strong> pentru alte echipe.</p>
+    <a href="spider-revenue-consultant.html" class="btn btn-secondary btn-lg">Vezi programul de certificare →</a>
+  </div>
+</section>
+
+<!-- SECTION 18 · Blog teaser -->
+<section class="section-highlight" id="resurse">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Resurse</span>
+      <h2>Articole pentru Manageri de vânzări și Chief Revenue Officer</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="badge">Forecasting</span>
+        <h4 style="margin-top:var(--space-3)">Cum dai un forecast lunar pe care CEO-ul îl crede</h4>
+        <p>5 pași pentru a construi un forecast cu margin de eroare &lt;15%, folosind pipeline ponderat și activity KPI.</p>
+        <a href="#" class="card-cta">Citește · 7 min →</a>
+      </div>
+      <div class="card">
+        <span class="badge">Coaching</span>
+        <h4 style="margin-top:var(--space-3)">Coaching agenți pe rotație · ritualul de 30 min</h4>
+        <p>Cum coachezi 6 agenți de vânzări în 1 oră / săpt fără să intri în deal-urile lor.</p>
+        <a href="#" class="card-cta">Citește · 6 min →</a>
+      </div>
+      <div class="card">
+        <span class="badge">Handoff</span>
+        <h4 style="margin-top:var(--space-3)">MQL → SQL → CS · cum construiești handoff-ul</h4>
+        <p>De ce marketing și sales se ceartă pe lead quality și cum rezolvi cu un singur dashboard.</p>
+        <a href="#" class="card-cta">Citește · 8 min →</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-8)">
+      <a href="index.html#resurse" class="btn btn-secondary">Vezi toate articolele →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 19 · Newsletter -->
+<section id="newsletter">
+  <div class="container narrow" style="text-align:center">
+    <span class="section-eyebrow">Newsletter</span>
+    <h2>1 idee pe săptămână pentru Manageri de vânzări și Chief Revenue Officer</h2>
+    <p style="font-size:var(--text-lg);color:var(--color-text-muted)">Citește în 3 minute. 1 idee tactică + 1 cifră de piață + 1 instrument util. Joi 8:00 AM.</p>
+    <form class="newsletter-form" onsubmit="event.preventDefault();alert('Mulțumim! Verifică email-ul pentru confirmare.')">
+      <input type="email" placeholder="emailul tău" required aria-label="Email" />
+      <select aria-label="Rol">
+        <option>Manager de vânzări</option>
+        <option>VP Sales</option>
+        <option>Chief Revenue Officer</option>
+        <option>Director comercial</option>
+        <option>Altul</option>
+      </select>
+      <button type="submit" class="btn btn-primary">Abonează-te</button>
+    </form>
+    <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-3)">Double opt-in · GDPR · te dezabonezi cu 1 click</p>
+  </div>
+</section>
+
+<!-- SECTION 20 · Final CTA -->
+<section>
+  <div class="container">
+    <div class="cta-final">
+      <h2>Echipa ta poate fi un motor de revenue. Sau poate continua să fie un cost stresant.</h2>
+      <p>Tu decizi. Noi îți arătăm exact unde stai în 5 minute.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a href="#self-assessment" class="btn btn-on-dark btn-lg">Spider Self-Assessment · 5 min</a>
+        <a href="#demo" class="btn btn-lg" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)">30 min cu un Revenue Advisor</a>
+      </div>
+      <p class="cta-final-trust">Pilot 30 zile cu cash-back · Anulezi oricând · Suport în limba română</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 21 · Author -->
+<section class="section-tight">
+  <div class="container">
+    <div class="author">
+      <div class="author-avatar">RN</div>
+      <div>
+        <p style="margin-bottom:var(--space-2)"><strong>Metodologie validată de Răzvan Nicoară</strong> — Lead Strategist & Methodology Practitioner. 12+ ani consultanță în Revenue Improvement pentru B2B mid-market. SPIDER Framework v2.0 · Revenue Improvement System designer.</p>
+        <div class="author-meta">
+          <a href="#">LinkedIn</a> · <a href="#">Bio completă</a> · <a href="#">Articole publicate</a> · Ultima actualizare: mai 2026 · SPIDER v2.0 · RIS v1.0
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:var(--space-4)">
+          <span class="logo-mark">L</span>
+          <span>Livespace</span>
+          <span class="logo-tag">RO</span>
+        </div>
+        <p style="color:rgba(255,255,255,.6);font-size:var(--text-sm)">Revenue Improvement System pentru companiile B2B care vor să livreze target lunar predictibil.</p>
+      </div>
+      <div>
+        <h5>Produs</h5>
+        <ul>
+          <li><a href="#trial">Trial 14 zile</a></li>
+          <li><a href="#preturi">Prețuri</a></li>
+          <li><a href="#">Funcționalități</a></li>
+          <li><a href="#">Integrări</a></li>
+          <li><a href="#">Securitate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Pentru cine</h5>
+        <ul>
+          <li><a href="spider-foundation.html">Antreprenori</a></li>
+          <li><a href="spider-acceleration.html">Sales Managers</a></li>
+          <li><a href="spider-forecast.html">RevOps · CRO</a></li>
+          <li><a href="spider-revenue-consultant.html">Consultanți</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Resurse</h5>
+        <ul>
+          <li><a href="index.html#resurse">Blog</a></li>
+          <li><a href="index.html#self-assessment">Self-Assessment</a></li>
+          <li><a href="index.html#webinarii">Webinarii</a></li>
+          <li><a href="index.html#cazuri">Case Studies</a></li>
+          <li><a href="#">Centru Ajutor</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Companie</h5>
+        <ul>
+          <li><a href="index.html#despre">Despre</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#gdpr">GDPR</a></li>
+          <li><a href="#dpa">DPA</a></li>
+          <li><a href="#cookies">Cookies</a></li>
+          <li><a href="#termeni">Termeni</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Livespace România · Toate drepturile rezervate</div>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/40000000000?text=Salut,%20sunt%20Manager%20de%20vânzări%20și%20vreau%20să%20discut%20despre%20RIS" class="whatsapp-fab" aria-label="WhatsApp">
+  <i data-lucide="message-circle"></i>
+</a>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://livespace.io/ro/#org",
+      "name": "Livespace România",
+      "url": "https://livespace.io/ro",
+      "logo": "https://livespace.io/ro/logo.png",
+      "sameAs": ["https://www.linkedin.com/company/livespace"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://livespace.io/ro/#ris",
+      "name": "Revenue Improvement System",
+      "alternateName": "RIS",
+      "description": "Sistem operațional integrat care unifică marketing, vânzări și post-sales într-un singur motor de revenue. Format din 3 componente: Livespace CRM + framework SPIDER + Revenue Advisor săptămânal.",
+      "provider": {"@id": "https://livespace.io/ro/#org"},
+      "areaServed": "RO",
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Sales Managers, VP Sales, Chief Revenue Officer in B2B mid-market"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://livespace.io/ro/#razvan",
+      "name": "Răzvan Nicoară",
+      "jobTitle": "Lead Strategist & Methodology Practitioner",
+      "description": "12+ ani consultanță în Revenue Improvement pentru B2B mid-market. SPIDER Framework v2.0 designer.",
+      "url": "https://razvannicoara.ro"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Ce este Revenue Improvement System și prin ce diferă față de un CRM normal?","acceptedAnswer":{"@type":"Answer","text":"RIS unifică tool (CRM) + framework (SPIDER) + advisor săptămânal într-un singur sistem operațional. Un CRM normal îți dă un instrument; RIS îți dă sistemul care îl face folosit zilnic de echipă."}},
+        {"@type":"Question","name":"De ce am nevoie de un advisor — am deja experiență în sales management?","acceptedAnswer":{"@type":"Answer","text":"Advisor-ul nu te învață să faci sales. Te ține accountable pe ritual săpt, e a doua pereche de ochi pe forecast și acoperă coaching-ul agenților pe rotație."}},
+        {"@type":"Question","name":"Cât durează până vede CEO-ul rezultate?","acceptedAnswer":{"@type":"Answer","text":"14 zile pentru primul raport board-ready. 90 zile pentru forecast cu margin <15%. 6 luni pentru payback complet pe o echipă de 5–10 agenți."}},
+        {"@type":"Question","name":"Pot integra Livespace cu HubSpot / Salesforce existing?","acceptedAnswer":{"@type":"Answer","text":"Da. Două căi: migrăm complet, sau rulăm complementar. Diagnosticul în săpt 1 stabilește calea optimă."}},
+        {"@type":"Question","name":"Cum convingi echipa să folosească CRM-ul?","acceptedAnswer":{"@type":"Answer","text":"Prin Definition of Done legat de KPI personal + ritual săpt cu advisor + dashboard transparent. Adoption măsurat 85%+ în 60 zile."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+// Lucide icons
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.lucide) lucide.createIcons();
+});
+
+// Language toggle
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.getElementById('langRo').classList.toggle('active', lang === 'ro');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.documentElement.setAttribute('lang', lang);
+  try { localStorage.setItem('livespace-lang', lang); } catch(e){}
+}
+try {
+  const saved = localStorage.getItem('livespace-lang');
+  if (saved) setLang(saved);
+} catch(e){}
+
+// Navbar scroll
+const navbar = document.getElementById('navbar');
+const stickyBar = document.getElementById('stickyBar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) navbar.classList.add('scrolled'); else navbar.classList.remove('scrolled');
+  const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrolledPct = window.scrollY / totalHeight;
+  if (scrolledPct > 0.3 && scrolledPct < 0.85) stickyBar.classList.add('visible'); else stickyBar.classList.remove('visible');
+});
+
+// Reveal on scroll
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.animate-on-scroll').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

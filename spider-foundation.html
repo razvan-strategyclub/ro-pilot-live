@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ro" data-lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SPIDER Foundation · Construiește-ți prima echipă de vânzări în 30 de zile · Livespace România</title>
+<meta name="description" content="Pentru owneri de companii €500K–€2M care încă închid 60–80% din deal-uri. Proces + Livespace CRM + Sales Coach 1:1 săptămânal. ~€400/lună all-in. Primele rezultate în 30 zile." />
+<meta name="robots" content="index,follow" />
+<link rel="canonical" href="https://livespace.io/ro/spider-foundation" />
+<link rel="alternate" hreflang="ro" href="https://livespace.io/ro/spider-foundation" />
+<link rel="alternate" hreflang="en" href="https://livespace.io/en/spider-foundation" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SPIDER Foundation · Pentru owneri care încă vând singuri" />
+<meta property="og:description" content="Construiește-ți prima echipă de vânzări profesionistă în 30 de zile. Proces + CRM + coach 1:1." />
+<meta property="og:locale" content="ro_RO" />
+<meta property="og:locale:alternate" content="en_US" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+<style>
+:root{
+  --color-bg:#FFFFFF; --color-surface:#F7F8FC; --color-surface-2:#F0F2FA;
+  --color-border:#E2E4EF; --color-divider:#DDE0EE;
+  --color-text:#0D0D1A; --color-text-muted:#3D3D5C; --color-text-faint:#6B7290;
+  --color-primary:#2963FF; --color-primary-hover:#1A3DD4; --color-primary-active:#1230B3; --color-primary-light:#EEF2FF;
+  --color-secondary:#7B5EA7; --color-secondary-light:#F3F0F9;
+  --color-success:#1DB77F; --color-warning:#F5A623; --color-error:#E53935;
+  --color-text-inverse:#FFFFFF;
+  /* Foundation accent (mai cald) */
+  --color-warm:#FF8A4C; --color-warm-light:#FFF1E8;
+  --text-xs:clamp(.75rem,.7rem + .25vw,.875rem);
+  --text-sm:clamp(.875rem,.8rem + .35vw,1rem);
+  --text-base:clamp(1rem,.95rem + .25vw,1.125rem);
+  --text-lg:clamp(1.125rem,1rem + .75vw,1.5rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);
+  --text-2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --text-3xl:clamp(2.5rem,1rem + 4vw,4.5rem);
+  --font-body:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --space-1:.25rem;--space-2:.5rem;--space-3:.75rem;--space-4:1rem;--space-5:1.25rem;
+  --space-6:1.5rem;--space-8:2rem;--space-10:2.5rem;--space-12:3rem;
+  --space-16:4rem;--space-20:5rem;--space-24:6rem;--space-32:8rem;
+  --radius-sm:4px;--radius-md:8px;--radius-lg:12px;--radius-xl:16px;--radius-2xl:24px;--radius-full:9999px;
+  --shadow-sm:0 1px 3px rgba(13,13,26,.06);
+  --shadow-md:0 4px 16px rgba(13,13,26,.08);
+  --shadow-lg:0 12px 40px rgba(13,13,26,.12);
+  --shadow-blue-sm:0 2px 8px rgba(41,99,255,.06);
+  --shadow-blue-md:0 4px 20px rgba(41,99,255,.12);
+  --shadow-blue-lg:0 16px 48px rgba(41,99,255,.16);
+  --transition-fast:120ms cubic-bezier(.16,1,.3,1);
+  --transition-interactive:180ms cubic-bezier(.16,1,.3,1);
+  --transition-smooth:300ms cubic-bezier(.16,1,.3,1);
+  --content-narrow:640px;--content-default:960px;--content-wide:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;color:var(--color-text);background:var(--color-bg);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--color-primary);text-decoration:none;transition:color var(--transition-interactive)}
+a:hover{color:var(--color-primary-hover);text-decoration:underline}
+h1,h2,h3,h4{font-weight:700;line-height:1.15;letter-spacing:-.02em;color:var(--color-text);margin:0 0 var(--space-4)}
+h1{font-size:var(--text-3xl);letter-spacing:-.035em;font-weight:800}
+h2{font-size:var(--text-2xl)}
+h3{font-size:var(--text-xl)}
+h4{font-size:var(--text-lg);font-weight:600}
+p{margin:0 0 var(--space-4);max-width:65ch}
+ul,ol{margin:0 0 var(--space-4);padding-left:1.25rem}
+li{margin-bottom:var(--space-2)}
+.container{max-width:var(--content-wide);margin-inline:auto;padding-inline:clamp(var(--space-4),4vw,var(--space-12))}
+.narrow{max-width:var(--content-default);margin-inline:auto}
+.thin{max-width:var(--content-narrow);margin-inline:auto}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--space-2);font-family:inherit;font-size:var(--text-sm);font-weight:600;padding:12px 24px;border-radius:var(--radius-md);border:none;cursor:pointer;white-space:nowrap;transition:background var(--transition-interactive),box-shadow var(--transition-interactive),transform var(--transition-fast);text-decoration:none;min-height:44px}
+.btn-primary{background:var(--color-primary);color:#fff}
+.btn-primary:hover{background:var(--color-primary-hover);color:#fff;text-decoration:none}
+.btn-secondary{background:transparent;color:var(--color-primary);border:1.5px solid var(--color-primary);padding:11px 23px}
+.btn-secondary:hover{background:var(--color-primary-light);text-decoration:none}
+.btn-warm{background:var(--color-warm);color:#fff}
+.btn-warm:hover{background:#E5733C;color:#fff;text-decoration:none}
+.btn-ghost{background:transparent;color:var(--color-primary);padding:8px 16px;font-weight:500;min-height:auto}
+.btn-lg{padding:16px 32px;font-size:var(--text-base);min-height:52px}
+.btn-on-dark{background:#fff;color:var(--color-primary)}
+
+/* Badge */
+.badge{display:inline-flex;align-items:center;background:var(--color-primary-light);color:var(--color-primary);border-radius:var(--radius-full);padding:4px 12px;font-size:var(--text-xs);font-weight:600;letter-spacing:.02em}
+.badge-warm{background:var(--color-warm-light);color:var(--color-warm)}
+.section-eyebrow{display:inline-block;font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--color-primary);background:var(--color-primary-light);border-radius:var(--radius-full);padding:6px 14px;margin-bottom:var(--space-4)}
+.section-eyebrow.warm{color:var(--color-warm);background:var(--color-warm-light)}
+
+/* Sections */
+section{padding-block:clamp(var(--space-16),8vw,var(--space-24))}
+.section-highlight{background:var(--color-surface)}
+.section-warm{background:linear-gradient(180deg,#fff 0%,var(--color-warm-light) 100%)}
+.section-tight{padding-block:clamp(var(--space-12),6vw,var(--space-16))}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--color-border);height:72px;display:flex;align-items:center;transition:box-shadow var(--transition-smooth)}
+.navbar.scrolled{box-shadow:var(--shadow-sm)}
+.navbar-inner{display:flex;align-items:center;justify-content:space-between;gap:var(--space-6);width:100%;max-width:var(--content-wide);margin-inline:auto;padding-inline:var(--space-6)}
+.logo{display:flex;align-items:center;gap:var(--space-2);font-weight:800;font-size:var(--text-lg);color:var(--color-text);text-decoration:none;letter-spacing:-.02em}
+.logo:hover{text-decoration:none;color:var(--color-text)}
+.logo-mark{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-secondary) 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800}
+.logo-tag{font-size:var(--text-xs);font-weight:600;background:var(--color-primary-light);color:var(--color-primary);padding:2px 8px;border-radius:var(--radius-full);letter-spacing:.05em}
+.nav-links{display:flex;align-items:center;gap:var(--space-6);list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--color-text-muted);font-weight:500;font-size:var(--text-sm)}
+.nav-links a:hover{color:var(--color-primary)}
+.nav-links a.active{color:var(--color-primary);font-weight:600}
+.nav-actions{display:flex;align-items:center;gap:var(--space-3)}
+.lang-switch{display:inline-flex;background:var(--color-surface);border-radius:var(--radius-full);padding:2px;font-size:var(--text-xs);font-weight:600}
+.lang-switch button{background:none;border:none;padding:4px 10px;border-radius:var(--radius-full);cursor:pointer;color:var(--color-text-muted);font-family:inherit;font-weight:600;font-size:var(--text-xs)}
+.lang-switch button.active{background:#fff;color:var(--color-primary);box-shadow:var(--shadow-sm)}
+.mobile-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--color-text);padding:8px}
+
+/* Breadcrumb */
+.breadcrumb{font-size:var(--text-xs);color:var(--color-text-faint);padding:var(--space-4) 0 0;display:flex;gap:var(--space-2);flex-wrap:wrap}
+.breadcrumb a{color:var(--color-text-faint)}
+.breadcrumb a:hover{color:var(--color-primary)}
+.breadcrumb span{color:var(--color-text-muted)}
+
+/* Hero */
+.hero{padding-block:clamp(var(--space-12),8vw,var(--space-20));background:linear-gradient(180deg,#fff 0%,var(--color-warm-light) 100%);position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--space-12);align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero h1{margin-bottom:var(--space-6);font-size:var(--text-3xl);letter-spacing:-.035em;line-height:1.05}
+.hero h1 .accent{background:linear-gradient(135deg,var(--color-warm),var(--color-secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{font-size:var(--text-lg);color:var(--color-text-muted);line-height:1.6;margin-bottom:var(--space-8)}
+.hero-actions{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-6)}
+.hero-trust{font-size:var(--text-sm);color:var(--color-text-faint);display:flex;gap:var(--space-4);flex-wrap:wrap;align-items:center}
+.hero-trust strong{color:var(--color-text)}
+.hero-visual{position:relative}
+.hero-split{display:grid;grid-template-columns:1fr 1fr;gap:var(--space-3);border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-lg);background:#fff;padding:var(--space-4);min-height:380px}
+.split-card{padding:var(--space-5);border-radius:var(--radius-lg);display:flex;flex-direction:column;gap:var(--space-3);position:relative}
+.split-card.before{background:linear-gradient(180deg,#FDECEC 0%,#FFF6F6 100%);border:1px solid #F5D4D4}
+.split-card.after{background:linear-gradient(180deg,var(--color-primary-light) 0%,#fff 100%);border:1px solid #CCD8FF}
+.split-card .label{font-size:var(--text-xs);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.split-card.before .label{color:var(--color-error)}
+.split-card.after .label{color:var(--color-primary)}
+.split-card h4{margin:0;font-size:var(--text-base)}
+.split-row{display:flex;justify-content:space-between;align-items:center;padding:var(--space-3);background:rgba(255,255,255,.7);border-radius:var(--radius-sm);font-size:var(--text-xs);font-weight:500}
+.split-row .num{font-weight:700;color:var(--color-text)}
+.split-mock-bar{height:6px;background:#fff;border-radius:99px;overflow:hidden;margin-top:auto}
+.split-mock-bar > div{height:100%;background:linear-gradient(90deg,var(--color-error),var(--color-warm));width:35%}
+.split-card.after .split-mock-bar > div{background:linear-gradient(90deg,var(--color-primary),var(--color-success));width:82%}
+
+/* Video block */
+.video-block{max-width:780px;margin:0 auto;border-radius:var(--radius-2xl);overflow:hidden;box-shadow:var(--shadow-blue-lg);aspect-ratio:16/9;background:#1A1A2E;display:flex;align-items:center;justify-content:center;position:relative;color:#fff}
+.video-block .play-btn{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.95);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform var(--transition-smooth)}
+.video-block .play-btn:hover{transform:scale(1.08)}
+.video-block .play-btn::after{content:"";border-style:solid;border-width:14px 0 14px 22px;border-color:transparent transparent transparent var(--color-primary);margin-left:6px}
+.video-block .label{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);color:#fff;font-size:var(--text-sm);font-weight:500;opacity:.85}
+
+/* Section header */
+.section-header{text-align:center;max-width:760px;margin:0 auto var(--space-12)}
+.section-header h2{margin-bottom:var(--space-4)}
+.section-header p{color:var(--color-text-muted);margin-inline:auto}
+
+/* Grids */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-6)}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--space-6)}
+@media (max-width:1024px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.grid-3,.grid-2{grid-template-columns:1fr}}
+
+/* Card */
+.card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);box-shadow:var(--shadow-blue-sm);transition:all var(--transition-smooth);height:100%;display:flex;flex-direction:column}
+.card:hover{box-shadow:var(--shadow-blue-md);border-color:rgba(41,99,255,.2);transform:translateY(-2px)}
+.card .icon-wrap{width:48px;height:48px;border-radius:var(--radius-md);background:var(--color-warm-light);color:var(--color-warm);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-4);font-size:24px}
+.card.cool .icon-wrap{background:var(--color-primary-light);color:var(--color-primary)}
+.card h3,.card h4{margin-bottom:var(--space-3)}
+.card p{color:var(--color-text-muted);margin-bottom:var(--space-3)}
+.card-cta{margin-top:auto;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+
+/* Pain card warm version */
+.pain-card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);height:100%}
+.pain-card .emoji{font-size:36px;display:block;margin-bottom:var(--space-4)}
+.pain-card h4{font-size:var(--text-lg);margin-bottom:var(--space-3);font-weight:700}
+.pain-card p{color:var(--color-text-muted);margin:0}
+
+/* Solution numbered */
+.solution-list{counter-reset:sol;list-style:none;padding:0;display:grid;gap:var(--space-4);max-width:880px;margin:0 auto}
+.solution-list li{counter-increment:sol;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6) var(--space-6) var(--space-6) var(--space-20);position:relative;box-shadow:var(--shadow-blue-sm)}
+.solution-list li::before{content:counter(sol);position:absolute;left:var(--space-5);top:var(--space-6);width:48px;height:48px;border-radius:var(--radius-md);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:var(--text-lg)}
+.solution-list strong{display:block;font-size:var(--text-lg);color:var(--color-text);margin-bottom:var(--space-2)}
+.solution-list p{margin:0;color:var(--color-text-muted)}
+
+/* Tables */
+.table-wrap{overflow-x:auto;border-radius:var(--radius-lg);border:1px solid var(--color-border);background:#fff;box-shadow:var(--shadow-sm)}
+table.data{width:100%;border-collapse:collapse;font-size:var(--text-sm)}
+table.data th,table.data td{padding:var(--space-4) var(--space-5);text-align:left;border-bottom:1px solid var(--color-border);vertical-align:top}
+table.data th{background:var(--color-surface);font-weight:700;font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.05em}
+table.data tr:last-child td{border-bottom:none}
+table.data tbody tr:hover{background:var(--color-warm-light)}
+table.weeks tbody tr.current{background:var(--color-primary-light)!important;border-left:4px solid var(--color-primary)}
+.week-pill{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:var(--radius-full);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;font-weight:800}
+
+/* Promise / milestones */
+.milestones{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--space-5)}
+@media (max-width:900px){.milestones{grid-template-columns:1fr}}
+.milestone{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-6);position:relative;overflow:hidden}
+.milestone::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--color-primary),var(--color-secondary))}
+.milestone .days{font-size:var(--text-2xl);font-weight:800;line-height:1;color:var(--color-primary);letter-spacing:-.03em;margin-bottom:var(--space-2)}
+.milestone .days small{font-size:var(--text-sm);font-weight:600;color:var(--color-text-muted);display:block;margin-top:4px}
+.milestone h4{font-size:var(--text-base);margin-bottom:var(--space-3);color:var(--color-text)}
+.milestone ul{list-style:none;padding:0;margin:0}
+.milestone li{padding:var(--space-2) 0;padding-left:28px;position:relative;color:var(--color-text-muted);font-size:var(--text-sm);border-bottom:1px solid var(--color-border)}
+.milestone li:last-child{border-bottom:none}
+.milestone li::before{content:"✓";position:absolute;left:0;top:var(--space-2);width:20px;height:20px;border-radius:50%;background:var(--color-success);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+
+/* Stats */
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-5);text-align:center}
+@media (max-width:768px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+.stat-card{padding:var(--space-6);background:#fff;border-radius:var(--radius-lg);border:1px solid var(--color-border)}
+.stat-number{font-size:clamp(1.75rem,1rem + 3vw,2.5rem);font-weight:800;line-height:1;letter-spacing:-.03em;margin-bottom:var(--space-2);background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-label{font-weight:600;color:var(--color-text);font-size:var(--text-sm)}
+
+/* Inclus in program */
+.inclus-block{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);height:100%}
+.inclus-block h3{display:flex;align-items:center;gap:var(--space-3);margin-bottom:var(--space-4);font-size:var(--text-lg)}
+.inclus-block .ic{width:40px;height:40px;border-radius:var(--radius-md);background:var(--color-primary-light);color:var(--color-primary);display:flex;align-items:center;justify-content:center;font-size:20px}
+.inclus-block ul{list-style:none;padding:0}
+.inclus-block li{padding:var(--space-2) 0;padding-left:24px;position:relative;color:var(--color-text-muted);font-size:var(--text-sm);line-height:1.6}
+.inclus-block li::before{content:"→";position:absolute;left:0;top:var(--space-2);color:var(--color-primary);font-weight:700}
+
+/* Onboarding steps */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:var(--space-4)}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.step{background:#fff;padding:var(--space-5);border-radius:var(--radius-lg);border:1px solid var(--color-border);text-align:center;display:flex;flex-direction:column;gap:var(--space-2)}
+.step-num{width:40px;height:40px;border-radius:50%;background:var(--color-primary);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto var(--space-2)}
+.step h4{font-size:var(--text-sm);margin-bottom:var(--space-1)}
+.step p{font-size:var(--text-xs);color:var(--color-text-muted);margin:0}
+
+/* NOT for you */
+.notfor{background:linear-gradient(135deg,#FFF8F2 0%,#FFF1E8 100%);border:1px solid #F5D9C2;border-radius:var(--radius-lg);padding:var(--space-8)}
+.notfor h3{margin-bottom:var(--space-4)}
+.notfor-list{list-style:none;padding:0;margin:0}
+.notfor-list li{padding:var(--space-3) 0;padding-left:36px;position:relative;border-bottom:1px solid rgba(245,166,35,.15);color:var(--color-text-muted)}
+.notfor-list li:last-child{border-bottom:none}
+.notfor-list li::before{content:"→";position:absolute;left:0;top:var(--space-3);color:var(--color-warm);font-weight:800}
+.notfor-list a{font-weight:600}
+
+/* FAQ */
+.faq{max-width:820px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);margin-bottom:var(--space-3);transition:box-shadow var(--transition-interactive)}
+.faq details[open]{box-shadow:var(--shadow-blue-sm);border-color:var(--color-primary)}
+.faq summary{padding:var(--space-5) var(--space-6);font-weight:600;font-size:var(--text-base);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--space-4)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;font-weight:400;color:var(--color-primary);transition:transform var(--transition-smooth);flex-shrink:0}
+.faq details[open] summary::after{content:"−"}
+.faq-content{padding:0 var(--space-6) var(--space-5);color:var(--color-text-muted);line-height:1.7}
+.faq-content p:last-child{margin-bottom:0}
+
+/* Testimonial */
+.testimonial{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:var(--space-8);position:relative}
+.testimonial::before{content:"”";position:absolute;top:-20px;left:24px;font-size:80px;color:var(--color-primary);line-height:1;font-family:Georgia,serif;font-weight:700}
+.testimonial p{font-size:var(--text-base);color:var(--color-text);font-style:italic;margin-bottom:var(--space-4)}
+.testimonial .who{display:flex;gap:var(--space-3);align-items:center}
+.testimonial .avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--color-primary),var(--color-secondary));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+.testimonial .meta strong{display:block;color:var(--color-text);font-size:var(--text-sm)}
+.testimonial .meta small{color:var(--color-text-faint);font-size:var(--text-xs)}
+.placeholder-tag{display:inline-block;font-size:var(--text-xs);font-weight:600;background:var(--color-warm-light);color:var(--color-warm);padding:2px 10px;border-radius:var(--radius-full);margin-bottom:var(--space-4);text-transform:uppercase;letter-spacing:.05em}
+
+/* PDF download */
+.pdf-block{background:linear-gradient(135deg,var(--color-primary-light) 0%,#fff 100%);border:1px solid #CCD8FF;border-radius:var(--radius-xl);padding:var(--space-10);text-align:center;max-width:760px;margin:0 auto}
+.pdf-icon{font-size:48px;margin-bottom:var(--space-4)}
+.pdf-block h3{margin-bottom:var(--space-3)}
+.pdf-block p{color:var(--color-text-muted);max-width:520px;margin:0 auto var(--space-6)}
+.pdf-actions{display:flex;gap:var(--space-3);justify-content:center;flex-wrap:wrap}
+
+/* Final CTA */
+.cta-final{background:linear-gradient(135deg,var(--color-primary) 0%,var(--color-secondary) 100%);color:#fff;text-align:center;border-radius:var(--radius-2xl);padding:clamp(var(--space-12),8vw,var(--space-20))}
+.cta-final h2{color:#fff;margin-bottom:var(--space-4);max-width:760px;margin-inline:auto}
+.cta-final p{color:rgba(255,255,255,.9);margin:0 auto var(--space-6);max-width:600px}
+.cta-final .hero-actions{justify-content:center;margin-bottom:var(--space-4)}
+.cta-final-trust{font-size:var(--text-sm);color:rgba(255,255,255,.8)}
+
+/* Footer */
+.footer{background:#0D0D1A;color:rgba(255,255,255,.7);padding-block:var(--space-20) var(--space-8)}
+.footer-grid{display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:var(--space-8);margin-bottom:var(--space-12)}
+@media (max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.footer-grid{grid-template-columns:1fr}}
+.footer h5{color:#fff;font-size:var(--text-sm);text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--space-4);font-weight:700}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer li{margin-bottom:var(--space-2)}
+.footer a{color:rgba(255,255,255,.7);font-size:var(--text-sm)}
+.footer a:hover{color:#fff;text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:var(--space-6);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:var(--space-4);font-size:var(--text-xs)}
+.footer-social{display:flex;gap:var(--space-3)}
+.footer-social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;color:#fff}
+.footer-social a:hover{background:var(--color-primary)}
+
+/* Sticky CTA bar */
+.sticky-bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--color-border);box-shadow:var(--shadow-lg);padding:var(--space-3) var(--space-4);z-index:90;transform:translateY(100%);transition:transform var(--transition-smooth);display:flex;gap:var(--space-3);align-items:center;justify-content:center;flex-wrap:wrap}
+.sticky-bar.visible{transform:translateY(0)}
+.sticky-bar strong{color:var(--color-text);font-size:var(--text-sm)}
+.whatsapp-fab{position:fixed;bottom:88px;right:24px;width:56px;height:56px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:80;transition:transform var(--transition-smooth)}
+.whatsapp-fab:hover{transform:scale(1.08);text-decoration:none;color:#fff}
+@media (max-width:768px){.whatsapp-fab{bottom:96px;right:16px}}
+
+/* Reveal */
+.animate-on-scroll{opacity:0;transform:translateY(24px);transition:opacity 500ms ease,transform 500ms ease}
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
+
+/* Lang */
+[data-i18n-en]{display:none}
+html[data-lang="en"] [data-i18n-ro]{display:none}
+html[data-lang="en"] [data-i18n-en]{display:initial}
+
+@media (max-width:768px){
+  .nav-links{display:none}
+  .mobile-toggle{display:flex}
+  .hero-actions .btn{flex:1 1 100%}
+  table.data{font-size:var(--text-xs)}
+  table.data th,table.data td{padding:var(--space-3)}
+}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">L</span>
+      <span>Livespace</span>
+      <span class="logo-tag">RO</span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html#programe" class="active">Pentru cine</a></li>
+        <li><a href="index.html#ce-este-ris">Revenue System</a></li>
+        <li><a href="index.html#preturi">Prețuri</a></li>
+        <li><a href="index.html#resurse">Resurse</a></li>
+        <li><a href="index.html#parteneri">Parteneri</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button onclick="setLang('ro')" id="langRo" class="active">RO</button>
+        <button onclick="setLang('en')" id="langEn">EN</button>
+      </div>
+      <a href="#login" class="btn-ghost" style="font-size:var(--text-sm);font-weight:500;color:var(--color-text-muted)">Login</a>
+      <a href="#trial" class="btn btn-primary">Începe trial 30 zile</a>
+      <button class="mobile-toggle" aria-label="Menu"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="container">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="index.html">Livespace RO</a> <span>›</span>
+    <a href="index.html#programe">Programe</a> <span>›</span>
+    <span>🕸️ SPIDER Foundation</span>
+  </nav>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="section-eyebrow warm">🕸️ SPIDER Foundation · Pentru owneri care încă vând singuri</span>
+        <h1 data-i18n-ro>Construiește-ți <span class="accent">prima echipă de vânzări profesionistă</span> în 30 de zile.</h1>
+        <h1 data-i18n-en>Build <span class="accent">your first professional sales team</span> in 30 days.</h1>
+        <p class="lead" data-i18n-ro>Ieși din rolul de „singurul vânzător din companie". Un proces clar, un CRM care chiar se folosește, și un Revenue Advisor 1:1 care te ține pe disciplină săptămânal.</p>
+        <p class="lead" data-i18n-en>Get out of being „the only seller in the company". A clear process, a CRM that's actually used, and a 1:1 Revenue Advisor who keeps you disciplined weekly.</p>
+        <div class="hero-actions">
+          <a href="#trial" class="btn btn-primary btn-lg">Începe trial 30 zile · fără card</a>
+          <a href="#self-assessment" class="btn btn-secondary btn-lg">Spider Self-Assessment · 5 min</a>
+        </div>
+        <div class="hero-trust">
+          <span>✅ <strong>Luna 1 gratuită</strong> · promo până 15 iulie 2026</span>
+          <span>✅ 100% online</span>
+          <span>✅ Pause &amp; resume oricând</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-split" role="img" aria-label="Înainte: Excel și WhatsApp · După: pipeline Livespace pe mobil">
+          <div class="split-card before">
+            <span class="label">Înainte</span>
+            <h4>Excel + WhatsApp + intuiție</h4>
+            <div class="split-row"><span>Lead Acme SRL</span><span class="num">?</span></div>
+            <div class="split-row"><span>Lead Beta SA</span><span class="num">?</span></div>
+            <div class="split-row"><span>Forecast luna</span><span class="num">🤷</span></div>
+            <div class="split-mock-bar"><div></div></div>
+            <small style="color:var(--color-error);font-weight:600;font-size:11px">Adoption 35%</small>
+          </div>
+          <div class="split-card after">
+            <span class="label">După 30 zile</span>
+            <h4>Livespace pe mobil</h4>
+            <div class="split-row"><span>✍️ Discovery</span><span class="num">12</span></div>
+            <div class="split-row"><span>🎯 Qualified</span><span class="num">8</span></div>
+            <div class="split-row"><span>💰 Forecast luna</span><span class="num">€142K</span></div>
+            <div class="split-mock-bar"><div></div></div>
+            <small style="color:var(--color-success);font-weight:600;font-size:11px">Adoption 82%</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Video -->
+<section class="section-tight">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:var(--space-8)">
+      <span class="section-eyebrow warm">🎬 60 secunde</span>
+      <h2>Vezi pe scurt ce primești</h2>
+      <p>Cui i se adresează SPIDER Foundation · ce primești · promisiunea 30 / 60 / 90 zile.</p>
+    </div>
+    <div class="video-block" role="button" aria-label="Play video">
+      <div class="play-btn" aria-hidden="true"></div>
+      <div class="label">Răzvan Nicoară · SPIDER Foundation · 60 sec</div>
+    </div>
+  </div>
+</section>
+
+<!-- 1.5 De ce ești aici -->
+<section class="section-warm">
+  <div class="container narrow">
+    <div class="section-header">
+      <span class="section-eyebrow warm">De ce ești aici</span>
+      <h2>Ai construit o companie. Compania trăiește pe umerii tăi.</h2>
+    </div>
+
+    <div class="grid-2" style="margin-bottom:var(--space-10)">
+      <div class="pain-card">
+        <span class="emoji">🎯</span>
+        <h4>Pentru cine este</h4>
+        <p>Owner de companie <strong>€500K–€2M revenue</strong>. Echipă mică — 0–3 vânzători. Tu închizi 60–80% din deal-uri. Lunile bune se țin de tine. Lunile slabe te lovesc în CFO și în nervi.</p>
+      </div>
+      <div class="pain-card">
+        <span class="emoji">🏗️</span>
+        <h4>Ce vrei să faci</h4>
+        <p>Să ieși din vânzare. <strong>Punct.</strong> Să construiești un sistem care livrează predictibil <strong>fără tine</strong> la fiecare deal — proces, oameni, tool. Un sistem care merge când ești în concediu 2 săptămâni.</p>
+      </div>
+      <div class="pain-card">
+        <span class="emoji">⚠️</span>
+        <h4>Realitatea</h4>
+        <p>Ai construit o companie care nu e companie. <strong>E un job care nu te lasă să dormi.</strong> Dacă nu ieși din vânzare în 6 luni, nu o vei face niciodată. Și într-o zi vei vinde compania — dar fără valoare reală, pentru că tot ce există e legat de tine.</p>
+      </div>
+      <div class="pain-card">
+        <span class="emoji">🥊</span>
+        <h4>Disciplina</h4>
+        <ul style="margin:0;padding-left:1rem;color:var(--color-text-muted)">
+          <li>Procesul, nu intuiția.</li>
+          <li>Sistemul, nu eroismul.</li>
+          <li>Ritualul săptămânal, nu „rezolv eu acum".</li>
+          <li>Documentat scris, nu transmis oral.</li>
+          <li>Owner clar pe fiecare etapă.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Promisiune 30/60/90 -->
+<section id="promisiune">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Promisiunea 30 / 60 / 90 zile</span>
+      <h2>Trei repere clare. Trei livrabile măsurabile.</h2>
+      <p>Nu „până la X%". Repere contractuale asumate.</p>
+    </div>
+    <div class="milestones">
+      <div class="milestone">
+        <div class="days">30<small>zile · proces și sistem definite</small></div>
+        <h4>Fundația se așază</h4>
+        <ul>
+          <li>Proces de vânzare documentat lead → close, replicabil de oricine</li>
+          <li>Livespace implementat și folosit zilnic — adoption ≥80%</li>
+          <li>Migrare completă Excel / WhatsApp / caiet → Livespace</li>
+        </ul>
+      </div>
+      <div class="milestone">
+        <div class="days">60<small>zile · disciplina devine obișnuință</small></div>
+        <h4>Echipa intră în ritm</h4>
+        <ul>
+          <li>1–2 vânzători operaționali cu KPI clar și dashboard live</li>
+          <li>Ritualuri săptămânale care rulează fără tine</li>
+          <li>Marketing → Sales handoff funcțional (SLA &lt;2h)</li>
+          <li>Post-vânzare minim funcțional (checklist + NPS lunar)</li>
+        </ul>
+      </div>
+      <div class="milestone">
+        <div class="days">90<small>zile · gestionezi cu doar 2h/săpt</small></div>
+        <h4>Companie fără tine în execuție</h4>
+        <ul>
+          <li>Tu sub 30% din deal-uri operaționale</li>
+          <li>Sales Lead intern identificat sau Sales Manager onboarded</li>
+          <li>Owner Operating System instalat · 2h/săpt pe agendă fixă</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. Problemă -->
+<section class="section-highlight" id="problema">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow warm">3 dureri pe care le auzim de la fiecare owner</span>
+      <h2>Te recunoști?</h2>
+    </div>
+    <div class="grid-3">
+      <div class="pain-card">
+        <span class="emoji">🔥</span>
+        <h4>„Vând tot eu"</h4>
+        <p>Toate ofertele, prețurile, negocierile, facturile — trec prin tine. Nu poți crește dacă nu te poți retrage din execuție.</p>
+      </div>
+      <div class="pain-card">
+        <span class="emoji">📉</span>
+        <h4>Am angajat manageri care n-au livrat</h4>
+        <p>Salariu mare, 3–6 luni, fără rezultate. Concediere, costuri de recrutare, pipeline distrus.</p>
+      </div>
+      <div class="pain-card">
+        <span class="emoji">🌫️</span>
+        <h4>Pipeline-ul trăiește în Excel / cap / WhatsApp</h4>
+        <p>Nu știi câte oportunități ai deschise, unde sunt, sau care e următorul pas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Soluție -->
+<section id="solutie">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Soluția · 3 piloni</span>
+      <h2>Proces · Tool · Coach</h2>
+      <p>Trei lucruri inseparabile. Fără unul, sistemul cade.</p>
+    </div>
+    <ol class="solution-list">
+      <li>
+        <strong>Proces de vânzare gata făcut</strong>
+        <p>Template B2B România, bazat pe metodologia SPIDER, gata în <strong>&lt;1 săptămână</strong>. Documentat scris, replicabil pe orice angajat nou.</p>
+      </li>
+      <li>
+        <strong>Livespace CRM Automation</strong>
+        <p>Minim 5 licențe, pipeline pre-configurat, mobil-friendly. <strong>~€40/user/lună</strong>. Setup complet în 5 zile.</p>
+      </li>
+      <li>
+        <strong>Sales Coach 1:1 · săptămânal cu tine</strong>
+        <p>1 sesiune/săpt, 1:1 cu owner-ul. Decizii săptămânale, evaluare manager, ce funcționează / ce nu. <strong>Owner challenge real</strong>, nu coaching pe nuanțe.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4. Cum arată în 4 săptămâni -->
+<section class="section-highlight" id="timeline">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cum arată în 4 săptămâni</span>
+      <h2>Săptămână cu săptămână · ce livrezi</h2>
+      <p>Nu metafore. Lista exactă a ce se întâmplă și ce vezi ca rezultat.</p>
+    </div>
+    <div class="table-wrap">
+      <table class="data weeks">
+        <thead><tr><th style="width:80px">Săpt</th><th>Ce se întâmplă</th><th>Rezultat vizibil</th></tr></thead>
+        <tbody>
+          <tr><td><span class="week-pill">1</span></td><td>Migrare Excel → pipeline Livespace · setare proces · 1 sesiune coach</td><td><strong>Pipeline live pe telefonul tău</strong></td></tr>
+          <tr><td><span class="week-pill">2</span></td><td>Echipa începe să folosească CRM-ul · checklists pe fiecare etapă</td><td><strong>Reguli clare pentru oameni</strong></td></tr>
+          <tr><td><span class="week-pill">3</span></td><td>Primele rapoarte · primul follow-up automat</td><td><strong>3–5 ore/săpt câștigate</strong></td></tr>
+          <tr><td><span class="week-pill">4</span></td><td>Review · ajustare proces · decizie pe manager (dacă e cazul)</td><td><strong>De la „eu vând" la „compania mea vinde"</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Cifre / promisiuni -->
+<section id="cifre">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cifre</span>
+      <h2>Cu ce rămâi concret</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-number">&lt;1 săpt</div><div class="stat-label">până la pipeline operațional</div></div>
+      <div class="stat-card"><div class="stat-number">~€400</div><div class="stat-label">/lună all-in · software + coaching</div></div>
+      <div class="stat-card"><div class="stat-number">3–5h</div><div class="stat-label">/săpt câștigate · claim standard</div></div>
+      <div class="stat-card"><div class="stat-number">Pauză</div><div class="stat-label">&amp; resume · sari o lună, te întorci când vrei</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5.5. Ce primești în program -->
+<section class="section-highlight" id="ce-primesti">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Ce primești în program</span>
+      <h2>Pachetul complet SPIDER Foundation</h2>
+      <p>4 componente integrate. Fără add-on-uri ascunse.</p>
+    </div>
+    <div class="grid-2">
+      <div class="inclus-block">
+        <h3><span class="ic">🤝</span> Acompaniere 1:1</h3>
+        <ul>
+          <li>Sales Coach SPIDER · <strong>1 oră/săpt 1:1 cu owner-ul</strong></li>
+          <li>Pipeline review + people moves + sistem &amp; proces + owner challenge</li>
+          <li>Check-in formal la 30 / 60 / 90 zile · audit obiectiv per promisiune</li>
+        </ul>
+      </div>
+      <div class="inclus-block">
+        <h3><span class="ic">💻</span> Tool &amp; implementare</h3>
+        <ul>
+          <li>Livespace Automation · 30 zile licențe gratuite pentru min. 5 utilizatori</li>
+          <li>Baseline assessment în primele 7 zile</li>
+          <li>Migrare Excel / WhatsApp / caiet → Livespace în 5 zile</li>
+          <li>Workshop design proces B2B (2 zile colaborative) + automatizare în Livespace</li>
+          <li>Checklist pe fiecare stadiu SPIDER 1–4</li>
+        </ul>
+      </div>
+      <div class="inclus-block">
+        <h3><span class="ic">🎓</span> Training &amp; certificare</h3>
+        <ul>
+          <li><strong>SPIDER Foundations Training (Levels 1–3)</strong> · prospect · calificare · discovery</li>
+          <li>Gratuit pentru toată echipa pe durata programului</li>
+          <li><strong>SPIDER Foundations Certified</strong> la finalizare · examen practic + badge LinkedIn + listare publică</li>
+          <li><strong>Spider Score</strong> evaluare lunară · prag minim 6/10 pentru încheierea programului</li>
+        </ul>
+      </div>
+      <div class="inclus-block">
+        <h3><span class="ic">🌐</span> Comunitate</h3>
+        <ul>
+          <li><strong>SPIDER Revenue Community</strong> (Facebook) · content, studii de caz, networking owneri / HoS / CRO</li>
+          <li><strong>SPIDER Execute</strong> (WhatsApp) · Q&amp;A operațional cu răspuns garantat &lt;4h în orele de program</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5.6. Cum intri în program -->
+<section id="intrare">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Cum intri în program</span>
+      <h2>5 pași de la „vreau" la „primul deal nou în Livespace"</h2>
+      <p>Promo de lansare · luna 1 gratuită dacă oprim · valabil până 15 iulie 2026.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Apel evaluare</h4>
+        <p>30–45 min cu consultant SPIDER. Verificăm fit. Nu acceptăm toate companiile.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>NDA + contract</h4>
+        <p>Doar firme · min. 5 angajați · acces la date istorice de vânzări.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Luna 1 trial</h4>
+        <p>Plată la final. Dacă oprești, luna 1 e gratuită. Fără factură, fără penalizare.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>3 luni recomandate</h4>
+        <p>Plată lunară după trial. Anulezi cu 30 zile notice.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h4>100% online</h4>
+        <p>Video + AnyDesk / TeamViewer sau acces direct pe contul Livespace. Fără deplasări.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Cui NU i se potrivește -->
+<section class="section-highlight" id="nu-pentru-tine">
+  <div class="container narrow">
+    <div class="section-header">
+      <span class="section-eyebrow warm">Cui NU i se potrivește</span>
+      <h2>Onest, nu pentru toată lumea</h2>
+      <p>Dacă te încadrezi în una din situațiile de mai jos, alt program SPIDER e potrivit pentru tine.</p>
+    </div>
+    <div class="notfor">
+      <ul class="notfor-list">
+        <li>Companii peste <strong>€2M cifră de afaceri</strong> sau peste 5 vânzători → vezi <a href="spider-acceleration.html">🕸️ SPIDER Acceleration</a></li>
+        <li><strong>CEO ieșit complet din vânzare</strong>, cu manager dedicat → vezi <a href="spider-acceleration.html">🕸️ SPIDER Acceleration</a></li>
+        <li>Director executiv <strong>€10M+</strong> cu 3 silos mkt/sales/CS → vezi <a href="spider-forecast.html">🕸️ SPIDER Forecast</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">FAQ · Foundation</span>
+      <h2>3 întrebări pe care ni le-a pus fiecare owner</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>Am deja un CRM (HubSpot Free / Pipedrive / etc.). De ce aș trece la Livespace?</summary>
+        <div class="faq-content"><p>Problema ta nu e tool-ul. E procesul + ritualul. Aici primești <strong>proces + coach</strong>, nu doar tool. Vei lucra cu Livespace CRM și vei avea suport complet pentru tranziția de la CRM-ul tău actual — migrare date, mapare câmpuri, training echipă. Tool-ul în sine e un detaliu; sistemul operațional e diferența.</p></div>
+      </details>
+      <details>
+        <summary>Nu am timp să implementez nimic. Am o companie de condus.</summary>
+        <div class="faq-content"><p><strong>1h/săpt cu coach-ul + 30 min pe pipeline.</strong> Restul e self-service: setup-ul îl facem noi, migrarea o facem noi, training-ul echipei îl livrăm noi. Tu vii cu deciziile, noi venim cu execuția.</p></div>
+      </details>
+      <details>
+        <summary>Cât costă într-adevăr — fără add-on-uri?</summary>
+        <div class="faq-content"><p><strong>~€400/lună all-in, lună de lună, fără contract anual.</strong> Acoperă Livespace pentru 5 utilizatori + 1 oră/săpt coaching + training SPIDER Foundations + acces comunitate. Dacă adăugi vânzători suplimentari peste 5, fiecare costă €40/lună adițional. Promo lansare · luna 1 gratuită.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Social proof -->
+<section class="section-highlight" id="social-proof">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-eyebrow">Voci de la owneri</span>
+      <h2>Cum a fost pentru ei</h2>
+      <p><span class="placeholder-tag">Placeholder pilot</span> Testimoniale reale după primele cazuri din pilot · mai 2026.</p>
+    </div>
+    <div class="grid-2">
+      <div class="testimonial">
+        <p>„În 4 săptămâni am scos pipeline-ul din Excel și din capul meu. Pentru prima dată în 8 ani de antreprenoriat, știu câte deal-uri am deschise. Dorm mai bine."</p>
+        <div class="who">
+          <div class="avatar">MA</div>
+          <div class="meta">
+            <strong>M.A. · Owner</strong>
+            <small>Servicii B2B · €1.4M revenue · București</small>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial">
+        <p>„Am angajat 2 manageri în 3 ani — ambii au eșuat. Aici am văzut clar că problema nu erau ei, ci sistemul. După 90 zile am angajat al treilea — cu proces clar în spate. În luna 2 era productiv."</p>
+        <div class="who">
+          <div class="avatar">CD</div>
+          <div class="meta">
+            <strong>C.D. · Founder</strong>
+            <small>SaaS B2B · €900K ARR · Cluj</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8.5. PDF download -->
+<section id="pdf">
+  <div class="container">
+    <div class="pdf-block">
+      <div class="pdf-icon">📥</div>
+      <h3>Prezentare PDF · SPIDER Foundation · pachet complet</h3>
+      <p>Tot ce intră în program · prețuri · modul de acces · calendar 30 / 60 / 90 · condiții · FAQ. Într-un singur document de citit cu echipa ta sau de trimis unui partener.</p>
+      <div class="pdf-actions">
+        <a href="#download-foundation" class="btn btn-primary btn-lg">📥 Descarcă PDF · ~10 pagini</a>
+        <a href="#email-pdf" class="btn btn-secondary btn-lg">📧 Trimite-mi pe email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CTA final -->
+<section>
+  <div class="container">
+    <div class="cta-final">
+      <h2>Următoarea ta angajare nu trebuie să fie un alt manager de vânzări.</h2>
+      <p>Începe cu un sistem care te ajută să decizi corect. Luna 1 gratuită. 100% online. Pauză oricând.</p>
+      <div class="hero-actions">
+        <a href="#trial" class="btn btn-on-dark btn-lg">Începe trial 30 zile</a>
+        <a href="#demo" class="btn btn-lg" style="background:rgba(255,255,255,.15);color:#fff;border:1.5px solid rgba(255,255,255,.4)">Vorbim 30 min · demo scurt</a>
+      </div>
+      <p class="cta-final-trust">Fără card · Fără contract anual · Suport în limba română</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:var(--space-4)">
+          <span class="logo-mark">L</span>
+          <span>Livespace</span>
+          <span class="logo-tag">RO</span>
+        </div>
+        <p style="color:rgba(255,255,255,.6);font-size:var(--text-sm)">Revenue Improvement System pentru companii B2B care vor să livreze target lunar predictibil.</p>
+      </div>
+      <div>
+        <h5>Produs</h5>
+        <ul>
+          <li><a href="#trial">Trial 30 zile</a></li>
+          <li><a href="index.html#preturi">Prețuri</a></li>
+          <li><a href="#">Funcționalități</a></li>
+          <li><a href="#">Integrări</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Programe SPIDER</h5>
+        <ul>
+          <li><a href="spider-foundation.html">🕸️ Foundation</a></li>
+          <li><a href="spider-acceleration.html">🕸️ Acceleration</a></li>
+          <li><a href="spider-forecast.html">🕸️ Forecast</a></li>
+          <li><a href="spider-revenue-consultant.html">Pentru consultanți</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Resurse</h5>
+        <ul>
+          <li><a href="index.html#resurse">Blog</a></li>
+          <li><a href="index.html#self-assessment">Self-Assessment</a></li>
+          <li><a href="index.html#webinarii">Webinarii</a></li>
+          <li><a href="index.html#cazuri">Case Studies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Companie</h5>
+        <ul>
+          <li><a href="index.html#despre">Despre</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#gdpr">GDPR</a></li>
+          <li><a href="#termeni">Termeni</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Livespace România · Toate drepturile rezervate</div>
+      <div class="footer-social">
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky CTA bar (mobile-friendly, apare după 30% scroll) -->
+<div class="sticky-bar" id="stickyBar">
+  <strong>🕸️ SPIDER Foundation · luna 1 gratuită</strong>
+  <a href="#trial" class="btn btn-primary">Începe trial 30 zile</a>
+</div>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/40000000000?text=Salut,%20sunt%20owner%20de%20companie%20și%20vreau%20să%20discut%20despre%20SPIDER%20Foundation" class="whatsapp-fab" aria-label="WhatsApp">
+  <i data-lucide="message-circle"></i>
+</a>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Livespace RO","item":"https://livespace.io/ro"},
+        {"@type":"ListItem","position":2,"name":"Programe","item":"https://livespace.io/ro#programe"},
+        {"@type":"ListItem","position":3,"name":"SPIDER Foundation","item":"https://livespace.io/ro/spider-foundation"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://livespace.io/ro/spider-foundation#service",
+      "name": "SPIDER Foundation",
+      "serviceType": "Revenue Improvement Program pentru owneri B2B",
+      "description": "Program 30/60/90 zile pentru owneri de companii €500K–€2M care încă închid 60-80% din deal-uri. Include Livespace CRM + framework SPIDER (Levels 1-3) + Sales Coach 1:1 săptămânal. ~€400/lună all-in.",
+      "areaServed": "RO",
+      "provider": {"@type":"Organization","name":"Livespace România","url":"https://livespace.io/ro"},
+      "audience": {"@type":"BusinessAudience","audienceType":"Owner de companie B2B €500K–€2M revenue, echipă 0–3 vânzători"},
+      "offers": {
+        "@type": "Offer",
+        "price": "400",
+        "priceCurrency": "EUR",
+        "description": "~€400/lună all-in · luna 1 gratuită promo până 15 iulie 2026",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "HowTo",
+      "name": "Construiește-ți prima echipă de vânzări în 30 de zile cu SPIDER Foundation",
+      "totalTime": "P30D",
+      "step": [
+        {"@type":"HowToStep","position":1,"name":"Săptămâna 1: Migrare și setup","text":"Migrare Excel/WhatsApp → pipeline Livespace, setare proces, prima sesiune cu Sales Coach."},
+        {"@type":"HowToStep","position":2,"name":"Săptămâna 2: Adoption echipă","text":"Echipa folosește CRM-ul zilnic, checklists pe fiecare etapă SPIDER 1-4."},
+        {"@type":"HowToStep","position":3,"name":"Săptămâna 3: Automatizări","text":"Primele rapoarte automate, primul follow-up automat, 3-5h/săpt câștigate."},
+        {"@type":"HowToStep","position":4,"name":"Săptămâna 4: Review și decizii","text":"Review proces, ajustări, decizie pe manager (dacă e cazul). Tranziție de la 'eu vând' la 'compania mea vinde'."}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Am deja un CRM (HubSpot / Pipedrive). De ce să trec la Livespace?","acceptedAnswer":{"@type":"Answer","text":"Problema ta nu e tool-ul, e procesul + ritualul. SPIDER Foundation îți dă proces + coach, nu doar tool. Migrarea de la CRM-ul actual o facem noi."}},
+        {"@type":"Question","name":"Nu am timp să implementez nimic.","acceptedAnswer":{"@type":"Answer","text":"1h/săpt cu coach-ul + 30 min pe pipeline. Restul e self-service: setup, migrare, training echipă le facem noi."}},
+        {"@type":"Question","name":"Cât costă într-adevăr?","acceptedAnswer":{"@type":"Answer","text":"~€400/lună all-in, lună de lună, fără contract anual. Acoperă Livespace pentru 5 utilizatori + 1h/săpt coaching + training SPIDER + acces comunitate. Luna 1 gratuită."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+window.addEventListener('DOMContentLoaded', () => { if (window.lucide) lucide.createIcons(); });
+
+function setLang(lang){
+  document.documentElement.setAttribute('data-lang', lang);
+  document.getElementById('langRo').classList.toggle('active', lang === 'ro');
+  document.getElementById('langEn').classList.toggle('active', lang === 'en');
+  document.documentElement.setAttribute('lang', lang);
+  try { localStorage.setItem('livespace-lang', lang); } catch(e){}
+}
+try { const saved = localStorage.getItem('livespace-lang'); if (saved) setLang(saved); } catch(e){}
+
+const navbar = document.getElementById('navbar');
+const stickyBar = document.getElementById('stickyBar');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) navbar.classList.add('scrolled'); else navbar.classList.remove('scrolled');
+  const total = document.documentElement.scrollHeight - window.innerHeight;
+  const pct = window.scrollY / total;
+  if (pct > 0.3 && pct < 0.9) stickyBar.classList.add('visible'); else stickyBar.classList.remove('visible');
+});
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); } });
+}, { threshold: 0.1 });
+document.querySelectorAll('.animate-on-scroll').forEach(el => io.observe(el));
+
+// Highlight "current week" pe tabel (animat la scroll)
+const weekRows = document.querySelectorAll('table.weeks tbody tr');
+let currentWeek = 0;
+const tableObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting){
+      const idx = Array.from(weekRows).indexOf(e.target);
+      weekRows.forEach(r => r.classList.remove('current'));
+      e.target.classList.add('current');
+    }
+  });
+}, { threshold: 0.6 });
+weekRows.forEach(r => tableObserver.observe(r));
+</script>
+
+</body>
+</html>
